@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    android:orientation="vertical" >
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#d3d3d3"
+	    android:orientation="vertical" >
+	    <LinearLayout
+	        android:id="@+id/layRenglonA"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textNombreDesfogues"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/nombre_refer"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <EditText
+	                android:id="@+id/editTextoNombreDesfogues"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:ems="10"
+	                android:hint="@string/int_nombre_refer" >
+	            </EditText>
+	
+	    </LinearLayout>
+		<LinearLayout
+	        android:id="@+id/layRenglon1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10.0dp"
+	        android:layout_below="@id/layRenglonA"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textTipoDesfogues"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/tipo"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	            <EditText
+	                android:id="@+id/editTextoTipoDesfogues"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:ems="10"
+	                android:hint="@string/int_tipo"
+	                android:inputType="textPersonName" />
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon1"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	
+	            <TextView
+	                android:id="@+id/textPropositoDesfogues"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/proposito"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <EditText
+	                android:id="@+id/editTextoPropositoDesfogues"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:ems="10"
+	                android:hint="@string/int_propo" >
+	            </EditText>
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon3"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon2"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	
+	            <TextView
+	                android:id="@+id/textCapacidadDesfogues"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/capacidad"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <EditText
+	                android:id="@+id/editTextoCapacidadDesfogues"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:ems="10"
+	                android:hint="@string/int_capacidad">
+	            </EditText>
+	
+	    </LinearLayout>
+	    <LinearLayout
+	        android:id="@+id/layRenglon4"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon3"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	
+	            <TextView
+	                android:id="@+id/textElevacionDesfogues"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/eleva_um"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <EditText
+	                android:id="@+id/editTextoElevacionDesfogues"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:ems="10"
+	                android:hint="@string/int_eleva">
+	            </EditText>
+	
+	    </LinearLayout>
+	    <LinearLayout
+	        android:id="@+id/layRenglon5"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon4"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	
+	            <TextView
+	                android:id="@+id/textDimensionesDesfogues"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/dimensiones"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <EditText
+	                android:id="@+id/editTextoDimensionesDesfogues"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:ems="10"
+	                android:hint="@string/int_dimen">
+	            </EditText>
+	
+	    </LinearLayout>
+	    <LinearLayout
+	        android:id="@+id/layRenglon6"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon5"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	
+	            <TextView
+	                android:id="@+id/textComentariosDesfogues"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/comentarios"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <EditText
+	                android:id="@+id/editTextoComentariosDesfogues"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:ems="10"
+	                android:hint="@string/int_comentarios">
+	            </EditText>
+	
+	    </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

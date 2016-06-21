@@ -1,0 +1,992 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ScrollLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/Contenido3_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="33dp"
+            android:layout_marginTop="11dp"
+            android:text="@string/cont_3_5"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/BotonesUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/Contenido3_5"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/buttonSaveUp3_5_dam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:background="@mipmap/guardar" />
+
+            <ImageButton
+                android:id="@+id/buttonOutUp3_5_dam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:background="@mipmap/salir" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textSiniestralidad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BotonesUp"
+            android:layout_marginTop="20.0dp"
+            android:paddingLeft="10dip"
+            android:text="@string/siniestralidad"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/Sini1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textSiniestralidad"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <LinearLayout
+                android:id="@+id/Sini11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textImporte2013"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2013"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layImporte2013"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editImporte2013_dam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp" />
+
+                    <Switch
+                        android:id="@+id/switchImporte2013_dam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN" />
+
+                    <LinearLayout
+                        android:id="@+id/layDef2013"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp" >
+
+                        <EditText
+                            android:id="@+id/editDef2013_dam"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini1"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <LinearLayout
+                android:id="@+id/Sini21"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textImporte2012"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2012"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layImporte2012"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editImporte2012_dam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp" />
+
+                    <Switch
+                        android:id="@+id/switchImporte2012_dam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN" />
+
+                    <LinearLayout
+                        android:id="@+id/layDef2012"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp" >
+
+                        <EditText
+                            android:id="@+id/editDef2012_dam"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini2"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <LinearLayout
+                android:id="@+id/Sini31"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textImporte2011"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2011"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layImporte2011"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editImporte2011_dam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp" />
+
+                    <Switch
+                        android:id="@+id/switchImporte2011_dam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN" />
+
+                    <LinearLayout
+                        android:id="@+id/layDef2011"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp" >
+
+                        <EditText
+                            android:id="@+id/editDef2011_dam"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini3"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <LinearLayout
+                android:id="@+id/Sini41"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textImporte2010"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2010"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layImporte2010"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editImporte2010_dam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp" />
+
+                    <Switch
+                        android:id="@+id/switchImporte2010_dam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN" />
+
+                    <LinearLayout
+                        android:id="@+id/layDef2010"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp" >
+
+                        <EditText
+                            android:id="@+id/editDef2010_dam"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini4"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <LinearLayout
+                android:id="@+id/Sini51"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textImporte2009"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2009"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layImporte2009"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editImporte2009_dam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp" />
+
+                    <Switch
+                        android:id="@+id/switchImporte2009_dam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN" />
+
+                    <LinearLayout
+                        android:id="@+id/layDef2009"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp" >
+
+                        <EditText
+                            android:id="@+id/editDef2009_dam"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini5"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <LinearLayout
+                android:id="@+id/Sini61"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textImporte2008"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2008"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layImporte2008"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editImporte2008_dam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp" />
+
+                    <Switch
+                        android:id="@+id/switchImporte2008_dam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN" />
+
+                    <LinearLayout
+                        android:id="@+id/layDef2008"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp" >
+
+                        <EditText
+                            android:id="@+id/editDef2008_dam"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini6"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <LinearLayout
+                android:id="@+id/Sini71"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textImporte2007"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2007"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layImporte2007"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editImporte2007_dam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp" />
+
+                    <Switch
+                        android:id="@+id/switchImporte2007_dam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN" />
+
+                    <LinearLayout
+                        android:id="@+id/layDef2007"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp" >
+
+                        <EditText
+                            android:id="@+id/editDef2007_dam"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini7"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <LinearLayout
+                android:id="@+id/Sini81"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textImporte2006"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2006"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layImporte2006"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editImporte2006_dam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp" />
+
+                    <Switch
+                        android:id="@+id/switchImporte2006_dam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN" />
+
+                    <LinearLayout
+                        android:id="@+id/layDef2006"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp" >
+
+                        <EditText
+                            android:id="@+id/editDef2006_dam"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini9"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini8"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <LinearLayout
+                android:id="@+id/Sini91"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textImporte2005"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2005"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layImporte2005"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editImporte2005_dam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp" />
+
+                    <Switch
+                        android:id="@+id/switchImporte2005_dam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN" />
+
+                    <LinearLayout
+                        android:id="@+id/layDef2005"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp" >
+
+                        <EditText
+                            android:id="@+id/editDef2005_dam"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini9"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <LinearLayout
+                android:id="@+id/Sini101"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textImporte2004"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2004"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layImporte2004"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editImporte2004_dam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp" />
+
+                    <Switch
+                        android:id="@+id/switchImporte2004_dam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN" />
+
+                    <LinearLayout
+                        android:id="@+id/layDef2004"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp" >
+
+                        <EditText
+                            android:id="@+id/editDef2004_dam"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/CheckBoxDef"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Sini10"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <TextView
+                android:id="@+id/ExpoText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/def_peli"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:id="@+id/CheckBox2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/checkboxInundacionDef_dam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/inun" />
+
+                <CheckBox
+                    android:id="@+id/checkboxHuracanDef_dam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/hura" />
+
+                <CheckBox
+                    android:id="@+id/checkboxTerremotoDef_dam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/terre" />
+
+                <CheckBox
+                    android:id="@+id/checkboxDeslaveDef_dam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/des" />
+
+                <CheckBox
+                    android:id="@+id/checkboxDerrumbeDef_dam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/derr" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/CheckBox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CheckBoxDef"
+            android:orientation="vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <TextView
+                android:id="@+id/DanosPreviosText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23.8dp"
+                android:text="@string/exis"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:id="@+id/DaniosPreviosCheckBox2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/checkboxInundacion_dam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textViewInundacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/inun" />
+
+                <CheckBox
+                    android:id="@+id/checkboxHuracan_dam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textViewHuracan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/hura" />
+
+                <CheckBox
+                    android:id="@+id/checkboxTerremoto_dam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textViewTerremoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/terre" />
+
+                <CheckBox
+                    android:id="@+id/checkboxDeslave_dam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textViewDeslave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/des" />
+
+                <CheckBox
+                    android:id="@+id/checkboxDerrumbe_dam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textViewDerrumbe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/derr" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/BotonesFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/CheckBox"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp" >
+
+            <ImageButton
+                android:id="@+id/buttonSaveBot3_5_dam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:background="@mipmap/guardar" />
+
+            <ImageButton
+                android:id="@+id/buttonOutBot3_5_dam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:background="@mipmap/salir" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/PropertyImage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/login_header" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PropertyImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/bienvenido"
+        android:textSize="70sp" />
+
+    <TextView
+        android:id="@+id/Sesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/sesion"
+        android:textSize="35sp" />
+
+    <ImageView
+        android:id="@+id/ImaVerde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Sesion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/login" />
+
+    <ImageButton
+        android:id="@+id/buttonCancelar_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/butQR"
+        android:layout_alignTop="@+id/butQR"
+        android:layout_marginTop="72dp"
+        android:background="@mipmap/bot_entrar2"
+        android:onClick="acepta" />
+
+    <ImageButton
+        android:id="@+id/butQR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ImaVerde"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="149dp"
+        android:background="@mipmap/escanear_urs_normal" />
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ns_menu_items">
+        <item>aquaculture</item>
+        <item>dams</item>
+        <item>education</item>
+        <item>health</item>
+        <item>hydraulic_infrastructure</item>
+        <item>historical_and_archaeological</item>
+        <item>urban_infraestructure</item>
+        <item>waste_disposal</item>
+        <item>ways</item>
+    </string-array>
+    <array name="ns_menu_items_icon">
+        <item>aquaculture</item>
+        <item>dams</item>
+        <item>education</item>
+        <item>health</item>
+        <item>hydraulic_infrastructure</item>
+        <item>historical_and_archaeological</item>
+        <item>urban_infraestructure</item>
+        <item>waste_disposal</item>
+        <item>ways</item>
+    </array>
+    <string-array name="spinner_property_types">
+        <item>Todos los tipos</item>
+        <item>Acuicola</item>
+        <item>Presa</item>
+        <item>Educación</item>
+        <item>Salud</item>
+        <item>Infraestructura hidraúlica</item>
+        <item>Bienes históricos y arqueologicos</item>
+        <item>Infrestructura urbana municipal</item>
+        <item>Disposición de residuos</item>
+        <item>Caminos con puentes y túneles</item>
+    </string-array>
+</resources>

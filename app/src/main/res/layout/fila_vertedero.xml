@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="horizontal" >
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView 
+            android:id="@+id/textNumeroFilaVertedero"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FF8C00"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Vertedero número"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textCapacidadAcumuladaFilaVertedero"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Capacidad Acumulada del Vertedero"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textTipoFilaVertedero"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:background="#FF8C00"
+            android:layout_weight="1"
+            android:text="Tipo del Vertedero"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textOperacionFilaVertedero"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Operación del Vertedero"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textLongitudCrestaFilaVertedero"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FF8C00"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Longitud de Cresta del Vertedero"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textElevacionCrestaFilaVertedero"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Elevacion de Cresta del Vertedero"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textNumeroCompuertasFilaVertedero"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FF8C00"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Numero de Compuertas del Vertedero"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textTipoCompuertasFilaVertedero"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Tipo de Compuertas del Vertedero"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textAlturaCompuertasFilaVertedero"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FF8C00"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Altura de Compuertas del Vertedero"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textAnchoCompuertasFilaVertedero"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Ancho de Compuertas del Vertedero"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textControlCompuertasFilaVertedero"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FF8C00"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Control de Compuertas del Vertedero"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textGastoPicoFilaVertedero"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Gasto Pico del Vertedero"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <TextView 
+            android:id="@+id/textElevacionLSCFilaVertedero"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FF8C00"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Elevación LSC del Vertedero"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textEstructuraDisipadoraFilaVertedero"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Estructura Disipadora del Vertedero"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:gravity="center_vertical|center">
+			    <ImageView
+			        android:id="@+id/imageAgujasFilaVertedero"
+			        android:gravity="center_vertical|center"
+			        android:layout_width="50dp"
+			        android:layout_height="50dp"
+			        android:adjustViewBounds="true"
+			        android:scaleType="fitXY" />
+	    </LinearLayout>
+        <TextView 
+            android:id="@+id/textAlturaAgujasFilaVertedero"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Altura de Agujas del Vertedero"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textComentariosFilaVertedero"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FF8C00"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Comentarios del Vertedero"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+    </LinearLayout>
+
+</LinearLayout>

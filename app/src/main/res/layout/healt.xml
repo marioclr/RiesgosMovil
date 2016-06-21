@@ -1,0 +1,2312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/background">
+    <RelativeLayout
+        android:id="@+id/ScrollLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp" >
+        <ImageView
+            android:id="@+id/PropertyImage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/login_header"
+            android:layout_centerHorizontal="true"/>
+        <RelativeLayout 
+            android:id="@+id/Encabezado"
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="30dp">
+        	<ImageView
+                android:id="@+id/imageBien_healt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="70dp"
+                android:src="@mipmap/healt"/>
+        	<TextView
+            	android:id="@+id/Title"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_alignParentBottom="true"
+            	android:layout_toRightOf="@+id/imageBien_healt"
+            	android:text="@string/salud"
+            	android:textSize="50sp"
+            	android:layout_marginTop="70dp"
+            	android:textStyle="italic" />
+
+        	<TextView
+        	    android:id="@+id/Contenido1_2"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:layout_alignParentRight="true"
+        	    android:layout_alignTop="@+id/imageBien_healt"
+        	    android:layout_marginRight="33dp"
+        	    android:layout_marginTop="19dp"
+        	    android:text="@string/cont_1_2"
+        	    android:textSize="30sp"
+        	    android:textStyle="italic" />
+
+    	</RelativeLayout>
+    	<LinearLayout 
+    	    android:id="@+id/BotonesUp" 
+    	    android:layout_width="wrap_content" 
+    	    android:layout_height="wrap_content" 
+    	    android:layout_alignParentRight="true" 
+    	    android:layout_below="@+id/Encabezado" 
+    	    android:orientation="horizontal">
+        	<ImageButton 
+        	    android:id="@+id/buttonSaveUp1_2_healt" 
+        	    android:layout_width="wrap_content" 
+        	    android:layout_height="wrap_content" 
+        	    android:layout_marginRight="30dp" 
+        	    android:background="@mipmap/guardar" />
+        	<ImageButton 
+        	    android:id="@+id/buttonOutUp1_2_healt" 
+        	    android:layout_width="wrap_content" 
+        	    android:layout_height="wrap_content" 
+        	    android:layout_marginRight="50dp" 
+        	    android:background="@mipmap/salir" />
+        	
+    	</LinearLayout>     
+    	<LinearLayout
+        	    android:id="@+id/layRenglon1"
+            	android:orientation="horizontal"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/BotonesUp"
+            	android:layout_marginTop="20.0dp">
+        		<LinearLayout 
+              		android:id="@+id/layColumna11" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textFechaConstruccion" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/fecha_const" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<EditText 
+                  android:id="@+id/editFechaCons_healt" 
+                  android:layout_width="fill_parent" 
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1" 
+                  android:textSize="20sp" 
+                  android:hint="@string/int_fecha_cons"/>
+            		 <LinearLayout
+            		     android:id="@+id/layFechaConst"
+            		     android:orientation="horizontal" 
+                		 android:layout_width="fill_parent" 
+                		 android:layout_height="wrap_content"
+                		 android:layout_marginTop="20.0dp"
+                		 android:layout_weight="1">
+              				<DatePicker
+              				    android:layout_width="fill_parent" 
+                  				android:layout_height="wrap_content" 
+                  				android:id="@+id/pickerFechaConst_healt" 
+                  				android:layout_weight="1" />
+            		 </LinearLayout>
+			</LinearLayout>
+			<LinearLayout 
+              		android:id="@+id/layColumna12" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		 <TextView
+            		     android:id="@+id/textNombre" 
+                		 android:layout_width="fill_parent" 
+                		 android:layout_height="wrap_content" 
+                		 android:textSize="20sp" 
+                		 android:text="@string/nombre"
+                		 android:textStyle="italic" 
+                	 	 android:layout_weight="1" />
+            		 <LinearLayout
+            		     android:id="@+id/layNombre" 
+                		 android:orientation="horizontal" 
+                		 android:layout_width="fill_parent" 
+                		 android:layout_height="wrap_content"
+                		 android:layout_weight="1">
+              				<EditText
+              				    android:id="@+id/editNombre_healt"
+                  				android:layout_width="fill_parent" 
+                  				android:layout_height="wrap_content" 
+                  				android:layout_weight="1" 
+                  				android:textSize="20sp" 
+                  				android:hint="@string/int_numero" 
+                  				android:inputType="numberDecimal" />
+              	</LinearLayout>
+              	<TextView
+            		     android:id="@+id/textTipoSuelo" 
+                		 android:layout_width="fill_parent" 
+                		 android:layout_height="wrap_content"
+                		 android:layout_marginTop="50.5dp" 
+                		 android:textSize="20sp" 
+                		 android:text="@string/tipo_suelo" 
+                		 android:textStyle="italic" 
+                	 	 android:layout_weight="1" />
+            		 <LinearLayout
+            		     android:id="@+id/layTipoSuelo" 
+                		 android:orientation="horizontal" 
+                		 android:layout_width="fill_parent" 
+                		 android:layout_height="wrap_content"
+                		 android:layout_weight="1">
+              				<Spinner
+              		    android:id="@+id/spinnerTipoSuelo_healt"
+                  		android:layout_width="fill_parent"
+                  		android:layout_height="wrap_content"
+                  		android:background="@drawable/spinner_selector" />
+              	</LinearLayout>
+              	<TextView
+            		     android:id="@+id/textNumPisos" 
+                		 android:layout_width="fill_parent" 
+                		 android:layout_height="wrap_content"
+                		 android:layout_marginTop="50.5dp"
+                		 android:textSize="20sp" 
+                		 android:text="@string/num_pisos" 
+                		 android:textStyle="italic" 
+                	 	 android:layout_weight="1" />
+            		 <LinearLayout
+            		     android:id="@+id/layNumPisos" 
+                		 android:orientation="horizontal" 
+                		 android:layout_width="fill_parent" 
+                		 android:layout_height="wrap_content"
+                		 android:layout_weight="1">
+              				<EditText
+              				    android:id="@+id/editNumPisos_healt"
+                  				android:layout_width="fill_parent" 
+                  				android:layout_height="wrap_content" 
+                  				android:layout_weight="1" 
+                  				android:textSize="20sp" 
+                  				android:hint="@string/int_numero" 
+                  				android:inputType="numberDecimal" />
+              	</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+    	    android:id="@+id/CheckBoxExpo"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layRenglon1"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip">
+
+                    <TextView
+                        android:id="@+id/ExpoText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="23.8dp"
+                        android:text="@string/expo"
+                        android:textSize="20sp"
+                        android:textStyle="italic" />
+
+    	    <LinearLayout 
+    	        android:id="@+id/CheckBox2"
+    	        android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5">
+                    	<CheckBox 
+                    	    android:id="@+id/checkboxInundacionExpo_healt" 
+        					android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"/>
+
+                    	<TextView
+                    	    android:id="@+id/textView"
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="60dp"
+                    	    android:layout_marginLeft="6dp"
+                    	    android:layout_marginRight="6dp"
+                    	    android:gravity="center_vertical|right"
+                    	    android:text="@string/inun" />
+
+                    	<CheckBox 
+                    	    android:id="@+id/checkboxHuracanExpo_healt" 
+        					android:layout_width="wrap_content"
+        					android:layout_height="wrap_content" />
+
+                    	<TextView
+                    	    android:id="@+id/textView2"
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="60dp"
+                    	    android:layout_marginLeft="6dp"
+                    	    android:layout_marginRight="6dp"
+                    	    android:gravity="center_vertical|right"
+                    	    android:text="@string/hura" />
+
+                    	<CheckBox 
+                    	    android:id="@+id/checkboxTerremotoExpo_healt" 
+        					android:layout_width="wrap_content"
+        					android:layout_height="wrap_content" />
+
+                    	<TextView
+                    	    android:id="@+id/textView3"
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="60dp"
+                    	    android:layout_marginLeft="6dp"
+                    	    android:layout_marginRight="6dp"
+                    	    android:gravity="center_vertical|right"
+                    	    android:text="@string/terre" />
+
+                    	<CheckBox 
+                    	    android:id="@+id/checkboxDeslaveExpo_healt" 
+        					android:layout_width="wrap_content"
+        					android:layout_height="wrap_content" />
+
+                    	<TextView
+                    	    android:id="@+id/textView4"
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="60dp"
+                    	    android:layout_marginLeft="6dp"
+                    	    android:layout_marginRight="6dp"
+                    	    android:gravity="center_vertical|right"
+                    	    android:text="@string/des" />
+
+                    	<CheckBox 
+                    	    android:id="@+id/checkboxDerrumbeExpo_healt" 
+        					android:layout_width="wrap_content"
+        					android:layout_height="wrap_content" />
+
+                    	<TextView
+                    	    android:id="@+id/textView5"
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="60dp"
+                    	    android:layout_marginLeft="6dp"
+                    	    android:layout_marginRight="6dp"
+                    	    android:gravity="center_vertical|right"
+                    	    android:text="@string/derr" />
+    	        
+    	    </LinearLayout>
+    	</LinearLayout>
+    	<TextView
+           android:id="@+id/textCaractGeo"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/CheckBoxExpo"
+           android:textSize="30sp"
+           android:paddingLeft="10dip"
+           android:layout_marginTop="20.0dp"
+           android:text="@string/caract_geo"
+           android:textStyle="italic"/>
+    	<LinearLayout
+            android:id="@+id/layRenglon18"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_below="@id/textCaractGeo"
+            android:layout_marginTop="20.0dp">
+          <LinearLayout
+              android:id="@+id/layColumna181" 
+              android:orientation="vertical" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:paddingLeft="10dip" 
+              android:layout_weight="1" 
+              android:layout_marginTop="20.0dp">
+            <TextView
+                android:id="@+id/textMunicipio" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:textSize="20sp" 
+                android:text="@string/municipio" 
+                android:textStyle="italic" 
+                android:layout_weight="1" />
+            <LinearLayout
+                android:id="@+id/layMunicipio" 
+                android:orientation="horizontal" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+              <EditText
+                  android:id="@+id/editMunicipio_healt" 
+                  android:layout_width="fill_parent" 
+                  android:layout_height="wrap_content" 
+                  android:layout_weight="1" 
+                  android:textSize="20sp" 
+                  android:hint="@string/int_mun"/>
+            </LinearLayout>
+        </LinearLayout>
+		<LinearLayout
+		    android:id="@+id/layColumna182"
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="10dip"
+		    android:layout_weight="1"
+		    android:layout_marginTop="20.0dp">
+            <TextView 
+                android:id="@+id/textColonia" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:textSize="20sp" 
+                android:text="@string/colonia" 
+                android:textStyle="italic" 
+                android:layout_weight="1" />
+            <LinearLayout 
+                android:id="@+id/layColonia" 
+                android:orientation="horizontal" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+              <EditText  
+                  android:id="@+id/editColonia_healt"
+                  android:layout_width="fill_parent" 
+                  android:layout_height="wrap_content" 
+                  android:layout_weight="1" 
+                  android:textSize="20sp" 
+                  android:hint="@string/int_colo" />
+            </LinearLayout>
+          </LinearLayout>
+          <LinearLayout 
+              android:id="@+id/layColumna183" 
+              android:orientation="vertical" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:paddingLeft="10dip" 
+              android:layout_weight="1" 
+              android:layout_marginTop="20.0dp">
+            <TextView 
+                android:id="@+id/textCP" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:textSize="20sp" 
+                android:text="@string/cp" 
+                android:textStyle="italic" 
+                android:layout_weight="1" />
+            <LinearLayout 
+                android:id="@+id/layCP" 
+                android:orientation="horizontal" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+              <EditText 
+                  android:id="@+id/editCp_healt" 
+                  android:layout_width="fill_parent" 
+                  android:layout_height="wrap_content" 
+                  android:layout_weight="1" 
+                  android:textSize="20sp" 
+                  android:hint="@string/int_cp"/>
+            </LinearLayout>
+          </LinearLayout>
+          <LinearLayout
+                    android:id="@+id/BotonCP"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    	<ImageButton
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="wrap_content"
+                    	    android:id="@+id/buttonCP_healt"
+                    	    android:background="@mipmap/buscar" />
+                </LinearLayout>
+       </LinearLayout>
+    
+    	<LinearLayout
+            android:id="@+id/layRenglon2"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:layout_below="@id/layRenglon18"
+            android:layout_marginTop="20.0dp">
+          <LinearLayout
+              android:id="@+id/layColumna21" 
+              android:orientation="vertical" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:paddingLeft="10dip" 
+              android:layout_weight="1" 
+              android:layout_marginTop="20.0dp">
+            <TextView
+                android:id="@+id/textCalle" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:textSize="20sp" 
+                android:text="@string/calle" 
+                android:textStyle="italic" 
+                android:layout_weight="1" />
+            <LinearLayout
+                android:id="@+id/layCalle" 
+                android:orientation="horizontal" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+              <EditText
+                  android:id="@+id/editCalle_healt" 
+                  android:layout_width="fill_parent" 
+                  android:layout_height="wrap_content" 
+                  android:layout_weight="1" 
+                  android:textSize="20sp" 
+                  android:hint="@string/int_calle"/>
+            </LinearLayout>
+        </LinearLayout>
+		
+          <LinearLayout 
+              android:id="@+id/layColumna23" 
+              android:orientation="vertical" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:paddingLeft="10dip" 
+              android:layout_weight="1" 
+              android:layout_marginTop="20.0dp">
+            <TextView 
+                android:id="@+id/textEstado" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:textSize="20sp" 
+                android:text="@string/estado" 
+                android:textStyle="italic" 
+                android:layout_weight="1" />
+            <LinearLayout 
+                android:id="@+id/layEstado" 
+                android:orientation="horizontal" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+              <EditText 
+                  android:id="@+id/editEstado_healt" 
+                  android:layout_width="fill_parent" 
+                  android:layout_height="wrap_content" 
+                  android:layout_weight="1" 
+                  android:textSize="20sp" 
+                  android:hint="@string/int_esta"/>
+            </LinearLayout>
+          </LinearLayout>
+       </LinearLayout>
+    	<LinearLayout
+    	    android:id="@+id/BotonUbicacion"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:layout_below="@id/layRenglon2"
+            android:layout_marginTop="20.0dp">
+          <LinearLayout
+              android:id="@+id/layBU11" 
+              android:orientation="vertical" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:paddingLeft="10dip" 
+              android:layout_weight="1" 
+              android:layout_marginTop="20.0dp">
+
+    	    <ImageButton
+    	        android:id="@+id/buttonUbicacion_healt"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_alignParentBottom="true"
+    	        android:layout_marginLeft="100dp"
+    	        android:layout_marginTop="23.8dp"
+    	        android:background="@mipmap/ubicacion" />
+    	    </LinearLayout>
+
+    	    <LinearLayout
+    	        android:id="@+id/RadioCuerpo"
+    	        android:orientation="vertical" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:paddingLeft="10dip"
+              android:paddingRight="10dip" 
+              android:layout_weight="1" 
+              android:layout_marginTop="20.0dp" >
+
+    	        <TextView
+    	            android:id="@+id/CuerpoLabel"
+    	            android:layout_width="wrap_content"
+    	            android:layout_height="wrap_content"
+    	            android:layout_marginTop="20dp"
+    	            android:layout_weight="1"
+    	            android:text="@string/cuerpo"
+    	            android:textSize="20sp"
+    	            android:textStyle="italic" />
+
+    	        <RadioGroup
+    	            android:layout_marginTop="10dp"
+    	            android:layout_width="fill_parent"
+    	            android:layout_height="fill_parent"
+    	            android:orientation="horizontal"
+    	            android:id="@+id/radioCuerpo_healt" >
+
+    	            <RadioButton
+    	                android:id="@+id/radioMar_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/mar" />
+
+    	            <RadioButton
+    	                android:id="@+id/radioLago_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/lago" />
+
+    	            <RadioButton
+    	                android:id="@+id/radioLaguna_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/laguna" />
+
+    	            <RadioButton
+    	                android:id="@+id/radioRio_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/rio" />
+    	        </RadioGroup>
+    	    </LinearLayout>
+    	</LinearLayout>
+    	<LinearLayout
+    	    android:id="@+id/layUbicacion"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BotonUbicacion"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_weight="3">
+                <LinearLayout
+                    android:id="@+id/Longitud"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+                    	<TextView
+                    		android:id="@+id/LongitudText"
+                    		android:layout_width="wrap_content"
+                    		android:layout_height="wrap_content"
+                    		android:textSize="20sp"
+                    		android:text="@string/longitud"
+                    		android:layout_marginTop="23.8dp"
+                    		android:textStyle="italic"/>
+                    	<EditText
+                    		android:layout_width="fill_parent"
+                    		android:layout_height="wrap_content"
+                    		android:id="@+id/editLongitud_healt"
+                    		android:layout_weight="1"
+                    		android:textSize="20sp"
+                    		android:hint="@string/int_lon" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/Latitud"
+                    	android:orientation="vertical"
+                    	android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content"
+                    	android:layout_weight="2">
+                    	<TextView
+                    		android:id="@+id/LatitudText"
+                    		android:layout_width="wrap_content"
+                    		android:layout_height="wrap_content"
+                    		android:textSize="20sp"
+                    		android:text="@string/latitud"
+                    		android:layout_marginTop="23.8dp"
+                    		android:textStyle="italic"/>
+                    	<EditText
+                    		android:layout_width="fill_parent"
+                    		android:layout_height="wrap_content"
+                    		android:id="@+id/editLatitud_healt"
+                    		android:layout_weight="1"
+                    		android:textSize="20sp"
+                    		android:hint="@string/int_lat" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/Altitud"
+                    	android:orientation="vertical"
+                    	android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content"
+                    	android:layout_weight="2">
+                    	<TextView
+                    		android:id="@+id/AltitudText"
+                    		android:layout_width="fill_parent"
+                    		android:layout_height="wrap_content"
+                    		android:textSize="20sp"
+                    		android:text="@string/altitud"
+                    		android:layout_marginTop="23.8dp"
+                    		android:textStyle="italic"/>
+                    	<EditText
+                    		android:layout_width="fill_parent"
+                    		android:layout_height="wrap_content"
+                    		android:id="@+id/editAltitud_healt"
+                    		android:layout_weight="1"
+                    		android:textSize="20sp"
+                    		android:hint="@string/int_alt" />
+			</LinearLayout>
+    	</LinearLayout>
+    	
+			<TextView
+           android:id="@+id/textCaractCons"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/layUbicacion"
+           android:textSize="30sp"
+           android:paddingLeft="10dip"
+           android:layout_marginTop="20.0dp"
+           android:text="@string/caract_cons"
+           android:textStyle="italic"/>
+          	<LinearLayout
+        	    android:id="@+id/layRenglon8"
+            	android:orientation="horizontal"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/textCaractCons"
+            	android:layout_marginTop="20.0dp">
+        		<LinearLayout 
+              		android:id="@+id/layColumna81" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textTipoEstruc" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/tipo_estru" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layTipoEstruc" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+              		<Spinner
+              		    android:id="@+id/spinnerTipoEstruc_healt"
+                  		android:layout_width="fill_parent"
+                  		android:layout_height="wrap_content"
+                  		android:background="@drawable/spinner_selector" />
+            		</LinearLayout>
+          		</LinearLayout>	
+          		<LinearLayout 
+              		android:id="@+id/layColumna82" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textMuros" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/muros" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layMuros" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+              		<Spinner
+              		    android:id="@+id/spinnerMuros_healt"
+              		    android:layout_width="fill_parent"
+              		    android:layout_height="wrap_content"
+              		    android:background="@drawable/spinner_selector" />
+              		</LinearLayout>
+          		</LinearLayout>	
+          	</LinearLayout>
+          	<LinearLayout
+        	    android:id="@+id/layRenglon9"
+            	android:orientation="horizontal"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/layRenglon8"
+            	android:layout_marginTop="20.0dp">
+        		<LinearLayout 
+              		android:id="@+id/layColumna91" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textTipoCime" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/tipo_cime" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layTipoCime" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+              		<Spinner
+              		    android:id="@+id/spinnerTipoCime_healt"
+                  		android:layout_width="fill_parent"
+                  		android:layout_height="wrap_content"
+                  		android:background="@drawable/spinner_selector" />
+            		</LinearLayout>
+          		</LinearLayout>	
+          		<LinearLayout 
+              		android:id="@+id/layColumna92" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textForCubi" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/for_cubierta" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layForCubi" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+              		<Spinner
+              		    android:id="@+id/spinnerTipoFormaCubi_healt"
+              		    android:layout_width="fill_parent"
+              		    android:layout_height="wrap_content"
+              		    android:background="@drawable/spinner_selector" />
+				</LinearLayout>
+          		</LinearLayout>	
+          	</LinearLayout>
+          	
+		
+		
+		<LinearLayout
+            android:id="@+id/layRenglon13"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:layout_below="@id/layRenglon9"
+            android:layout_marginTop="20.0dp">
+          <LinearLayout
+              android:id="@+id/layColumna131" 
+              android:orientation="vertical" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:paddingLeft="10dip" 
+              android:layout_weight="1" 
+              android:layout_marginTop="20.0dp">
+            <TextView
+                android:id="@+id/textTipoCubi" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:textSize="20sp" 
+                android:text="@string/tipos_cubierta" 
+                android:textStyle="italic" 
+                android:layout_weight="1" />
+            <LinearLayout
+                android:id="@+id/layTiposCubi" 
+                android:orientation="horizontal" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+              <RadioGroup
+    	            android:layout_width="wrap_content"
+    	            android:layout_height="wrap_content"
+    	            android:orientation="vertical"
+    	            android:layout_marginTop="20.0dp"    	            
+    	            android:id="@+id/radioTipoCubi_healt" >
+
+    	            <RadioButton
+    	                android:id="@+id/radioLigera_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/ligera" />
+
+    	            <RadioButton
+    	                android:id="@+id/radioPesada_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/pesada" />    	        
+					</RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+		<LinearLayout
+		    android:id="@+id/layColumna132"
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="10dip"
+		    android:layout_weight="1"
+		    android:layout_marginTop="20.0dp">
+            <TextView 
+                android:id="@+id/textElevaDes" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:textSize="20sp" 
+                android:text="@string/ele_despla" 
+                android:textStyle="italic" 
+                android:layout_weight="1" />
+            <LinearLayout 
+                android:id="@+id/layElevDes" 
+                android:orientation="horizontal" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+              <RadioGroup
+    	            android:layout_width="wrap_content"
+    	            android:layout_height="wrap_content"
+    	            android:orientation="vertical"
+    	            android:layout_marginTop="20.0dp"    	            
+    	            android:id="@+id/radioElevaDes_healt" >
+
+    	            <RadioButton
+    	                android:id="@+id/radioIrrePla_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/irre_pla" />
+
+    	            <RadioButton
+    	                android:id="@+id/radioIrreEle_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/irre_ele" />
+
+    	            <RadioButton
+    	                android:id="@+id/radioNinguna_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/ninguna" />    	        
+					</RadioGroup>
+            </LinearLayout>
+          </LinearLayout>
+          <LinearLayout 
+              android:id="@+id/layColumna133" 
+              android:orientation="vertical" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:paddingLeft="10dip" 
+              android:layout_weight="1" 
+              android:layout_marginTop="20.0dp">
+            <TextView 
+                android:id="@+id/textSeLocaliza" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:textSize="20sp" 
+                android:text="@string/se_localiza" 
+                android:textStyle="italic" 
+                android:layout_weight="1" />
+            <LinearLayout 
+                android:id="@+id/laySeLocaliza" 
+                android:orientation="horizontal" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+              <RadioGroup
+    	            android:layout_width="wrap_content"
+    	            android:layout_height="wrap_content"
+    	            android:orientation="vertical"
+    	            android:layout_marginTop="20.0dp"    	            
+    	            android:id="@+id/radioSeLocaliza_healt" >
+
+    	            <RadioButton
+    	                android:id="@+id/radioPostes_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/postes" />
+
+    	            <RadioButton
+    	                android:id="@+id/radioAnunEspe_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/anu_espe" />
+
+    	            <RadioButton
+    	                android:id="@+id/radioArboles_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/arboles" />    	        
+					</RadioGroup>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout 
+              android:id="@+id/layColumna134" 
+              android:orientation="vertical" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:paddingLeft="10dip" 
+              android:layout_weight="1" 
+              android:layout_marginTop="20.0dp">
+            <TextView 
+                android:id="@+id/textGeoCons" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:textSize="20sp" 
+                android:text="@string/geo_cons" 
+                android:textStyle="italic" 
+                android:layout_weight="1" />
+            <LinearLayout 
+                android:id="@+id/layGeoCons" 
+                android:orientation="horizontal" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+              <RadioGroup
+    	            android:layout_width="wrap_content"
+    	            android:layout_height="wrap_content"
+    	            android:orientation="vertical"
+    	            android:layout_marginTop="20.0dp"    	            
+    	            android:id="@+id/radioGeoCons_healt" >
+
+    	            <RadioButton
+    	                android:id="@+id/radioRegularGC_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/regular" />
+
+    	            <RadioButton
+    	                android:id="@+id/radioIrregularGC_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/irregular" />
+    	            </RadioGroup>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+            android:id="@+id/layRenglon14"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:layout_below="@id/layRenglon13"
+            android:layout_marginTop="20.0dp">
+          <LinearLayout
+              android:id="@+id/layColumna141" 
+              android:orientation="vertical" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:paddingLeft="10dip" 
+              android:layout_weight="1" 
+              android:layout_marginTop="20.0dp">
+            <TextView
+                android:id="@+id/textTamaCris" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:textSize="20sp" 
+                android:text="@string/tama_cri" 
+                android:textStyle="italic" 
+                android:layout_weight="1" />
+            <LinearLayout
+                android:id="@+id/layTamaCris" 
+                android:orientation="horizontal" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+              <RadioGroup
+    	            android:layout_width="wrap_content"
+    	            android:layout_height="wrap_content"
+    	            android:orientation="vertical"
+    	            android:layout_marginTop="20.0dp"    	            
+    	            android:id="@+id/radioTamaCris_healt" >
+
+    	            <RadioButton
+    	                android:id="@+id/radioChicos_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/ch" />
+
+    	            <RadioButton
+    	                android:id="@+id/radioMedianos_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/m" />
+    	            <RadioButton
+    	                android:id="@+id/radioGrandes_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/g" />
+    	                	        
+					</RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+		<LinearLayout
+		    android:id="@+id/layColumna142"
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="10dip"
+		    android:layout_weight="1"
+		    android:layout_marginTop="20.0dp">
+            <TextView 
+                android:id="@+id/textPreFacha" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:textSize="20sp" 
+                android:text="@string/pre_facha" 
+                android:textStyle="italic" 
+                android:layout_weight="1" />
+            <LinearLayout 
+                android:id="@+id/layPreFacha" 
+                android:orientation="horizontal" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+              <RadioGroup
+    	            android:layout_width="wrap_content"
+    	            android:layout_height="wrap_content"
+    	            android:orientation="vertical"
+    	            android:layout_marginTop="20.0dp"    	            
+    	            android:id="@+id/radioPreFacha_healt" >
+
+    	            <RadioButton
+    	                android:id="@+id/radioTablaroca_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/tabla" />
+
+    	            <RadioButton
+    	                android:id="@+id/radioPlastico_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/plas" />
+    	            <RadioButton
+    	                android:id="@+id/radioLamina_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/lamina" />
+    	            </RadioGroup>
+				</LinearLayout>
+          </LinearLayout>
+          <LinearLayout 
+              android:id="@+id/layColumna143" 
+              android:orientation="vertical" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:paddingLeft="10dip" 
+              android:layout_weight="1" 
+              android:layout_marginTop="20.0dp">
+            <TextView 
+                android:id="@+id/textEstaConsRadio" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:textSize="20sp" 
+                android:text="@string/est_cons" 
+                android:textStyle="italic" 
+                android:layout_weight="1" />
+            <LinearLayout 
+                android:id="@+id/layEstaConsRadio" 
+                android:orientation="horizontal" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+              <RadioGroup
+    	            android:layout_width="wrap_content"
+    	            android:layout_height="wrap_content"
+    	            android:orientation="vertical"
+    	            android:layout_marginTop="20.0dp"    	            
+    	            android:id="@+id/radioEstaCos_healt" >
+
+    	            <RadioButton
+    	                android:id="@+id/radioExcelenteEC_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/excelente" />
+
+    	            <RadioButton
+    	                android:id="@+id/radioRegularEC_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/regular" />
+    	            <RadioButton
+    	                android:id="@+id/radioMaloEC_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/malo" />
+    	            </RadioGroup>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+            android:id="@+id/layRenglon15"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:layout_below="@id/layRenglon14"
+            android:layout_marginTop="20.0dp">
+			<LinearLayout 
+              android:id="@+id/layColumna151" 
+              android:orientation="vertical" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:paddingLeft="10dip" 
+              android:layout_weight="1" 
+              android:layout_marginTop="20.0dp">
+            <TextView 
+                android:id="@+id/textCueDom" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:textSize="20sp" 
+                android:text="@string/cue_domo" 
+                android:textStyle="italic" 
+                android:layout_weight="1" />
+            <LinearLayout 
+                android:id="@+id/layCueDomo" 
+                android:orientation="horizontal" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+              <Switch
+              		    android:id="@+id/switchCueDomo_healt"
+              		    android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:checked="false"
+                  android:layout_marginTop="20.0dp"
+                  android:textOn="SÍ"
+                  android:textOff="NO"
+                  android:layout_marginBottom="32dip" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout 
+              android:id="@+id/layColumna152" 
+              android:orientation="vertical" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:paddingLeft="10dip" 
+              android:layout_weight="1" 
+              android:layout_marginTop="20.0dp">
+            <TextView 
+                android:id="@+id/textPreGolpe" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:textSize="20sp" 
+                android:text="@string/pre_gol" 
+                android:textStyle="italic" 
+                android:layout_weight="1" />
+            <LinearLayout 
+                android:id="@+id/layPreGolpe" 
+                android:orientation="horizontal" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+              <Switch
+              		    android:id="@+id/switchPreGolpe_healt"
+              		    android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:checked="false"
+                  android:layout_marginTop="20.0dp"
+                  android:textOn="SÍ"
+                  android:textOff="NO"
+                  android:layout_marginBottom="32dip" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout 
+              android:id="@+id/layColumna153" 
+              android:orientation="vertical" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:paddingLeft="10dip" 
+              android:layout_weight="1" 
+              android:layout_marginTop="20.0dp">
+            <TextView 
+                android:id="@+id/textExiObj" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:textSize="20sp" 
+                android:text="@string/exi_obj" 
+                android:textStyle="italic" 
+                android:layout_weight="1" />
+            <LinearLayout 
+                android:id="@+id/layExiObj" 
+                android:orientation="horizontal" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+              <Switch
+              		    android:id="@+id/switchExiObj_healt"
+              		    android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:checked="false"
+                  android:layout_marginTop="20.0dp"
+                  android:textOn="SÍ"
+                  android:textOff="NO"
+                  android:layout_marginBottom="32dip" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout 
+              android:id="@+id/layColumna154" 
+              android:orientation="vertical" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:paddingLeft="10dip" 
+              android:layout_weight="1" 
+              android:layout_marginTop="20.0dp">
+            <TextView 
+                android:id="@+id/textPreMuros" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:textSize="20sp" 
+                android:text="@string/pre_muros" 
+                android:textStyle="italic" 
+                android:layout_weight="1" />
+            <LinearLayout 
+                android:id="@+id/layPreMuros" 
+                android:orientation="horizontal" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+              <Switch
+              		    android:id="@+id/switchPreMuros_healt"
+              		    android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:checked="false"
+                  android:layout_marginTop="20.0dp"
+                  android:textOn="SÍ"
+                  android:textOff="NO"
+                  android:layout_marginBottom="32dip" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+            android:id="@+id/layRenglon16"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:layout_below="@id/layRenglon15"
+            android:layout_marginTop="20.0dp">
+			<LinearLayout 
+              android:id="@+id/layColumna161" 
+              android:orientation="vertical" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:paddingLeft="10dip" 
+              android:layout_weight="1" 
+              android:layout_marginTop="20.0dp">
+            <TextView 
+                android:id="@+id/textTipoVent" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:textSize="20sp" 
+                android:text="@string/tipo_vent" 
+                android:textStyle="italic" 
+                android:layout_weight="1" />
+            <LinearLayout 
+                android:id="@+id/layTipoVent" 
+                android:orientation="horizontal" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+              <Switch
+              		    android:id="@+id/switchTipoVent_healt"
+              		    android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:checked="false"
+                  android:layout_marginTop="20.0dp"
+                  android:textOn="ESPECIFIQUE"
+                  android:textOff="NINGUNA"
+                  android:layout_marginBottom="32dip" />
+              <EditText
+                  android:id="@+id/editTipoVent_healt" 
+                  android:layout_width="fill_parent" 
+                  android:layout_height="wrap_content" 
+                  android:layout_weight="1" 
+                  android:textSize="20sp" 
+                  android:hint="@string/espe_tipo"/>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout 
+              android:id="@+id/layColumna162" 
+              android:orientation="vertical" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:paddingLeft="10dip" 
+              android:layout_weight="1" 
+              android:layout_marginTop="20.0dp">
+            <TextView 
+                android:id="@+id/textTipoDomo" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:textSize="20sp" 
+                android:text="@string/tipo_domo" 
+                android:textStyle="italic" 
+                android:layout_weight="1" />
+            <LinearLayout 
+                android:id="@+id/layTipoDomo" 
+                android:orientation="horizontal" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+              <Switch
+              		    android:id="@+id/switchTipoDomo_healt"
+              		    android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:checked="false"
+                  android:layout_marginTop="20.0dp"
+                  android:textOn="ESPECIFIQUE"
+                  android:textOff="NINGUNA"
+                  android:layout_marginBottom="32dip" />
+              <EditText
+                  android:id="@+id/editTipoDomo_healt" 
+                  android:layout_width="fill_parent" 
+                  android:layout_height="wrap_content" 
+                  android:layout_weight="1" 
+                  android:textSize="20sp" 
+                  android:hint="@string/espe_tipo"/>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+        	    android:id="@+id/layRenglon20"
+            	android:orientation="horizontal"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/layRenglon16"
+            	android:layout_marginTop="20.0dp">
+			<LinearLayout 
+              android:id="@+id/layColumna1201" 
+              android:orientation="vertical" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:paddingLeft="10dip" 
+              android:layout_weight="1" 
+              android:layout_marginTop="20.0dp">
+            <TextView 
+                android:id="@+id/textPreHun" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:textSize="20sp" 
+                android:text="@string/prese_hun" 
+                android:textStyle="italic" 
+                android:layout_weight="1" />
+            <LinearLayout 
+                android:id="@+id/layPreHun" 
+                android:orientation="horizontal" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+              <Switch
+              		    android:id="@+id/switchPreHun_healt"
+              		    android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:checked="false"
+                  android:layout_marginTop="20.0dp"
+                  android:textOn="SÍ"
+                  android:textOff="NO"
+                  android:layout_marginBottom="32dip" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout 
+              android:id="@+id/layColumna202" 
+              android:orientation="vertical" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:paddingLeft="10dip" 
+              android:layout_weight="1" 
+              android:layout_marginTop="20.0dp">
+            <TextView 
+                android:id="@+id/textGraveHund" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:textSize="20sp" 
+                android:text="@string/grav_hun" 
+                android:textStyle="italic" 
+                android:layout_weight="1" />
+            <LinearLayout 
+                android:id="@+id/layGraveHund" 
+                android:orientation="horizontal" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+              <RadioGroup
+    	            android:layout_width="wrap_content"
+    	            android:layout_height="wrap_content"
+    	            android:orientation="vertical"
+    	            android:layout_marginTop="20.0dp"    	            
+    	            android:id="@+id/radioGraveHun_healt" >
+
+    	            <RadioButton
+    	                android:id="@+id/radioImperceptibles_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/imper" />
+
+    	            <RadioButton
+    	                android:id="@+id/radioLigeros_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/ligeros" />
+
+    	            <RadioButton
+    	                android:id="@+id/radioMuyGrandes_healt"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/muy_gran" />    	        
+					</RadioGroup>
+            	</LinearLayout>
+			</LinearLayout>
+			</LinearLayout>
+		
+		<LinearLayout
+        	    android:id="@+id/layRenglon17"
+            	android:orientation="horizontal"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/layRenglon20"
+            	android:layout_marginTop="20.0dp">
+        		<LinearLayout 
+              		android:id="@+id/layColumna171" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textEstruRefor" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/estr_refo" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layEstruRefor" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+              		<Switch
+              		    android:id="@+id/switchEstruRefor_healt"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:checked="false"
+              		    android:layout_marginTop="20.0dp"
+              		    android:textOn="NO"
+              		    android:textOff="SÍ"
+              		    android:layout_marginBottom="32dip" />
+            		</LinearLayout>
+          		</LinearLayout>	
+          		<LinearLayout 
+              		android:id="@+id/layColumna172" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textFechaRefu" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/fecha_refu" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<EditText 
+                  android:id="@+id/editFechaRefu_healt" 
+                  android:layout_width="fill_parent" 
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20.0dp"
+                  android:layout_weight="1" 
+                  android:textSize="20sp" 
+                  android:hint="@string/int_fecha_refu"/>
+            		<LinearLayout 
+                		android:id="@+id/layFechaRefu" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1"
+                		android:layout_marginBottom="32dip">
+              		<DatePicker
+              				    android:layout_width="fill_parent" 
+                  				android:layout_height="wrap_content" 
+                  				android:id="@+id/pickerFechaRefu_healt" 
+                  				android:layout_weight="1" />
+				</LinearLayout>
+			</LinearLayout>	
+		</LinearLayout>
+		<LinearLayout
+    	    android:id="@+id/CheckBoxExist"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layRenglon17"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip">
+
+                    <TextView
+                        android:id="@+id/ExistText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="23.8dp"
+                        android:text="@string/exis"
+                        android:textSize="20sp"
+                        android:textStyle="italic" />
+
+    	    <LinearLayout 
+    	        android:id="@+id/CheckBoxExisten"
+    	        android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5">
+                    	<CheckBox 
+                    	    android:id="@+id/checkboxInundacionExist_healt" 
+        					android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"/>
+
+                    	<TextView
+                    	    android:id="@+id/textViewExpo"
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="60dp"
+                    	    android:layout_marginLeft="6dp"
+                    	    android:layout_marginRight="6dp"
+                    	    android:gravity="center_vertical|right"
+                    	    android:text="@string/inun" />
+
+                    	<CheckBox 
+                    	    android:id="@+id/checkboxHuracanExist_healt" 
+        					android:layout_width="wrap_content"
+        					android:layout_height="wrap_content" />
+
+                    	<TextView
+                    	    android:id="@+id/textView2Expo"
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="60dp"
+                    	    android:layout_marginLeft="6dp"
+                    	    android:layout_marginRight="6dp"
+                    	    android:gravity="center_vertical|right"
+                    	    android:text="@string/hura" />
+
+                    	<CheckBox 
+                    	    android:id="@+id/checkboxTerremotoExist_healt" 
+        					android:layout_width="wrap_content"
+        					android:layout_height="wrap_content" />
+
+                    	<TextView
+                    	    android:id="@+id/textView3Expo"
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="60dp"
+                    	    android:layout_marginLeft="6dp"
+                    	    android:layout_marginRight="6dp"
+                    	    android:gravity="center_vertical|right"
+                    	    android:text="@string/terre" />
+
+                    	<CheckBox 
+                    	    android:id="@+id/checkboxDeslaveExist_healt" 
+        					android:layout_width="wrap_content"
+        					android:layout_height="wrap_content" />
+
+                    	<TextView
+                    	    android:id="@+id/textView4Expo"
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="60dp"
+                    	    android:layout_marginLeft="6dp"
+                    	    android:layout_marginRight="6dp"
+                    	    android:gravity="center_vertical|right"
+                    	    android:text="@string/des" />
+
+                    	<CheckBox 
+                    	    android:id="@+id/checkboxDerrumbeExist_healt" 
+        					android:layout_width="wrap_content"
+        					android:layout_height="wrap_content" />
+
+                    	<TextView
+                    	    android:id="@+id/textView5Expo"
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="60dp"
+                    	    android:layout_marginLeft="6dp"
+                    	    android:layout_marginRight="6dp"
+                    	    android:gravity="center_vertical|right"
+                    	    android:text="@string/derr" />
+    	        
+    	    </LinearLayout>
+    	</LinearLayout>
+    	<TextView
+           android:id="@+id/textSiniestralidad"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/CheckBoxExist"
+           android:textSize="30sp"
+           android:paddingLeft="10dip"
+           android:layout_marginTop="20.0dp"
+           android:text="@string/siniestralidad"
+           android:textStyle="italic"/>
+    	<LinearLayout
+        	    android:id="@+id/Sini1"
+            	android:orientation="horizontal"
+            	android:paddingLeft="10dip"
+            	android:paddingRight="10dip"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/textSiniestralidad">
+        		<LinearLayout 
+              		android:id="@+id/Sini11" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textImporte2013" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/imp_2013" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layImporte2013" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+
+              		<EditText
+              		    android:id="@+id/editImporte2013_healt"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_importe"
+              		    android:textSize="20sp" />
+
+              		<Switch
+              		    android:id="@+id/switchImporte2013_healt"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:checked="true"
+              		    android:enabled="false"
+              		    android:layout_marginTop="20.0dp"
+              		    android:textOn="MXN"
+              		    android:textOff="USD"
+              		    android:layout_marginBottom="32dip" />
+              		<LinearLayout 
+                		android:id="@+id/layDef2013" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content"
+                		android:paddingLeft="30dp" 
+                		android:layout_weight="1">
+                		<EditText
+              		    android:id="@+id/editDef2013_healt"
+              		    android:layout_width="fill_parent"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_def"
+              		    android:textSize="20sp" >
+
+              		</EditText>
+              	</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+        	    android:id="@+id/Sini2"
+            	android:orientation="horizontal"
+            	android:paddingLeft="10dip"
+            	android:paddingRight="10dip"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/Sini1">
+        		<LinearLayout 
+              		android:id="@+id/Sini21" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textImporte2012" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/imp_2012" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layImporte2012" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+
+              		<EditText
+              		    android:id="@+id/editImporte2012_healt"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_importe"
+              		    android:textSize="20sp" />
+
+              		<Switch
+              		    android:id="@+id/switchImporte2012_healt"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:checked="true"
+              		    android:enabled="false"
+              		    android:layout_marginTop="20.0dp"
+              		    android:textOn="MXN"
+              		    android:textOff="USD"
+              		    android:layout_marginBottom="32dip" />
+              		<LinearLayout 
+                		android:id="@+id/layDef2012" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content"
+                		android:paddingLeft="30dp" 
+                		android:layout_weight="1">
+                		<EditText
+              		    android:id="@+id/editDef2012_healt"
+              		    android:layout_width="fill_parent"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_def"
+              		    android:textSize="20sp" />
+              		</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+        	    android:id="@+id/Sini3"
+            	android:orientation="horizontal"
+            	android:paddingLeft="10dip"
+            	android:paddingRight="10dip"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/Sini2">
+        		<LinearLayout 
+              		android:id="@+id/Sini31" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textImporte2011" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/imp_2011" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layImporte2011" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+
+              		<EditText
+              		    android:id="@+id/editImporte2011_healt"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_importe"
+              		    android:textSize="20sp" />
+
+              		<Switch
+              		    android:id="@+id/switchImporte2011_healt"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:checked="true"
+              		    android:enabled="false"
+              		    android:layout_marginTop="20.0dp"
+              		    android:textOn="MXN"
+              		    android:textOff="USD"
+              		    android:layout_marginBottom="32dip" />
+              		<LinearLayout 
+                		android:id="@+id/layDef2011" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content"
+                		android:paddingLeft="30dp" 
+                		android:layout_weight="1">
+                		<EditText
+              		    android:id="@+id/editDef2011_healt"
+              		    android:layout_width="fill_parent"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_def"
+              		    android:textSize="20sp" />
+              		</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+        	    android:id="@+id/Sini4"
+            	android:orientation="horizontal"
+            	android:paddingLeft="10dip"
+            	android:paddingRight="10dip"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/Sini3">
+        		<LinearLayout 
+              		android:id="@+id/Sini41" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textImporte2010" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/imp_2010" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layImporte2010" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+
+              		<EditText
+              		    android:id="@+id/editImporte2010_healt"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_importe"
+              		    android:textSize="20sp" />
+
+              		<Switch
+              		    android:id="@+id/switchImporte2010_healt"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:checked="true"
+              		    android:enabled="false"
+              		    android:layout_marginTop="20.0dp"
+              		    android:textOn="MXN"
+              		    android:textOff="USD"
+              		    android:layout_marginBottom="32dip" />
+              		<LinearLayout 
+                		android:id="@+id/layDef2010" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content"
+                		android:paddingLeft="30dp" 
+                		android:layout_weight="1">
+                		<EditText
+              		    android:id="@+id/editDef2010_healt"
+              		    android:layout_width="fill_parent"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_def"
+              		    android:textSize="20sp" />
+              		</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+        	    android:id="@+id/Sini5"
+            	android:orientation="horizontal"
+            	android:paddingLeft="10dip"
+            	android:paddingRight="10dip"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/Sini4">
+        		<LinearLayout 
+              		android:id="@+id/Sini51" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textImporte2009" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/imp_2009" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layImporte2009" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+
+              		<EditText
+              		    android:id="@+id/editImporte2009_healt"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_importe"
+              		    android:textSize="20sp" />
+
+              		<Switch
+              		    android:id="@+id/switchImporte2009_healt"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:checked="true"
+              		    android:enabled="false"
+              		    android:layout_marginTop="20.0dp"
+              		    android:textOn="MXN"
+              		    android:textOff="USD"
+              		    android:layout_marginBottom="32dip" />
+              		<LinearLayout 
+                		android:id="@+id/layDef2009" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content"
+                		android:paddingLeft="30dp" 
+                		android:layout_weight="1">
+                		<EditText
+              		    android:id="@+id/editDef2009_healt"
+              		    android:layout_width="fill_parent"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_def"
+              		    android:textSize="20sp" />
+              		</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+        	    android:id="@+id/Sini6"
+            	android:orientation="horizontal"
+            	android:paddingLeft="10dip"
+            	android:paddingRight="10dip"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/Sini5">
+        		<LinearLayout 
+              		android:id="@+id/Sini61" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textImporte2008" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/imp_2008" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layImporte2008" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+              		<EditText
+              		    android:id="@+id/editImporte2008_healt"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_importe"
+              		    android:textSize="20sp" />
+              		<Switch
+              		    android:id="@+id/switchImporte2008_healt"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:checked="true"
+              		    android:enabled="false"
+              		    android:layout_marginTop="20.0dp"
+              		    android:textOn="MXN"
+              		    android:textOff="USD"
+              		    android:layout_marginBottom="32dip" />
+              		<LinearLayout 
+                		android:id="@+id/layDef2008" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content"
+                		android:paddingLeft="30dp" 
+                		android:layout_weight="1">
+                		<EditText
+              		    android:id="@+id/editDef2008_healt"
+              		    android:layout_width="fill_parent"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_def"
+              		    android:textSize="20sp" />
+              		</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+        	    android:id="@+id/Sini7"
+            	android:orientation="horizontal"
+            	android:paddingLeft="10dip"
+            	android:paddingRight="10dip"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/Sini6">
+        		<LinearLayout 
+              		android:id="@+id/Sini71" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textImporte2007" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/imp_2007" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layImporte2007" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+              		<EditText
+              		    android:id="@+id/editImporte2007_healt"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_importe"
+              		    android:textSize="20sp" />
+              		<Switch
+              		    android:id="@+id/switchImporte2007_healt"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:checked="true"
+              		    android:enabled="false"
+              		    android:layout_marginTop="20.0dp"
+              		    android:textOn="MXN"
+              		    android:textOff="USD"
+              		    android:layout_marginBottom="32dip" />
+              		<LinearLayout 
+                		android:id="@+id/layDef2007" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content"
+                		android:paddingLeft="30dp" 
+                		android:layout_weight="1">
+                		<EditText
+              		    android:id="@+id/editDef2007_healt"
+              		    android:layout_width="fill_parent"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_def"
+              		    android:textSize="20sp" />
+              		</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+        	    android:id="@+id/Sini8"
+            	android:orientation="horizontal"
+            	android:paddingLeft="10dip"
+            	android:paddingRight="10dip"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/Sini7">
+        		<LinearLayout 
+              		android:id="@+id/Sini81" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textImporte2006" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/imp_2006" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layImporte2006" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+              		<EditText
+              		    android:id="@+id/editImporte2006_healt"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_importe"
+              		    android:textSize="20sp" />
+              		<Switch
+              		    android:id="@+id/switchImporte2006_healt"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:checked="true"
+              		    android:enabled="false"
+              		    android:layout_marginTop="20.0dp"
+              		    android:textOn="MXN"
+              		    android:textOff="USD"
+              		    android:layout_marginBottom="32dip" />
+              		<LinearLayout 
+                		android:id="@+id/layDef2006" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content"
+                		android:paddingLeft="30dp" 
+                		android:layout_weight="1">
+                		<EditText
+              		    android:id="@+id/editDef2006_healt"
+              		    android:layout_width="fill_parent"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_def"
+              		    android:textSize="20sp" />
+              		</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+        	    android:id="@+id/Sini9"
+            	android:orientation="horizontal"
+            	android:paddingLeft="10dip"
+            	android:paddingRight="10dip"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/Sini8">
+        		<LinearLayout 
+              		android:id="@+id/Sini91" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textImporte2005" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/imp_2005" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layImporte2005" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+              		<EditText
+              		    android:id="@+id/editImporte2005_healt"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_importe"
+              		    android:textSize="20sp" />
+              		<Switch
+              		    android:id="@+id/switchImporte2005_healt"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:checked="true"
+              		    android:enabled="false"
+              		    android:layout_marginTop="20.0dp"
+              		    android:textOn="MXN"
+              		    android:textOff="USD"
+              		    android:layout_marginBottom="32dip" />
+              		<LinearLayout 
+                		android:id="@+id/layDef2005" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content"
+                		android:paddingLeft="30dp" 
+                		android:layout_weight="1">
+                		<EditText
+              		    android:id="@+id/editDef2005_healt"
+              		    android:layout_width="fill_parent"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_def"
+              		    android:textSize="20sp" />
+              		</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+        	    android:id="@+id/Sini10"
+            	android:orientation="horizontal"
+            	android:paddingLeft="10dip"
+            	android:paddingRight="10dip"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/Sini9">
+        		<LinearLayout 
+              		android:id="@+id/Sini101" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textImporte2004" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/imp_2004" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layImporte2004" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+              		<EditText
+              		    android:id="@+id/editImporte2004_healt"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_importe"
+              		    android:textSize="20sp" />
+              		<Switch
+              		    android:id="@+id/switchImporte2004_healt"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:checked="true"
+              		    android:enabled="false"
+              		    android:layout_marginTop="20.0dp"
+              		    android:textOn="MXN"
+              		    android:textOff="USD"
+              		    android:layout_marginBottom="32dip" />
+              		<LinearLayout 
+                		android:id="@+id/layDef2004" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content"
+                		android:paddingLeft="30dp" 
+                		android:layout_weight="1">
+                		<EditText
+              		    android:id="@+id/editDef2004_healt"
+              		    android:layout_width="fill_parent"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_def"
+              		    android:textSize="20sp" />
+              		</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout 
+    	    android:id="@+id/BotonesFinal" 
+    	    android:layout_width="wrap_content" 
+    	    android:layout_height="wrap_content" 
+    	    android:layout_alignParentRight="true"
+    	    android:layout_marginTop="20dp"
+    	    android:paddingBottom="10dp"
+    	    android:layout_below="@+id/Sini10" 
+    	    android:orientation="horizontal">
+			     <ImageButton 
+        	    android:id="@+id/buttonSaveBot1_2_healt"
+        	    android:layout_width="wrap_content" 
+        	    android:layout_height="wrap_content" 
+        	    android:layout_marginRight="30dp" 
+        	    android:background="@mipmap/guardar" />
+        	<ImageButton 
+        	    android:id="@+id/buttonOutBot1_2_healt"
+        	    android:layout_width="wrap_content" 
+        	    android:layout_height="wrap_content" 
+        	    android:layout_marginRight="50dp" 
+        	    android:background="@mipmap/salir" />
+        	
+    	</LinearLayout>
+	</RelativeLayout>
+</ScrollView>

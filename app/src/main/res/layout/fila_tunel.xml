@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="horizontal" >
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView 
+            android:id="@+id/textNombreFilaTunel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FF8C00"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Nombre del Tunel"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textLongitudFilaTunel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Longitud del Tunel"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textVRNFilaTunel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:background="#FF8C00"
+            android:layout_weight="1"
+            android:text="Valor de reposición a nuevo del Tunel"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textTipoFilaTunel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Tipo de Tunel"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+    </LinearLayout>
+
+</LinearLayout>

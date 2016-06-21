@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/background">
+    <RelativeLayout
+        android:id="@+id/ScrollLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp" >
+        <TextView
+            android:id="@+id/Contenido2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="33dp"
+            android:layout_marginTop="11dp"
+            android:text="@string/cont_2_2"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+        <TextView
+           android:id="@+id/textValores"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/Contenido2_2"
+           android:textSize="30sp"
+           android:paddingLeft="10dp"
+           android:text="@string/valores"
+           android:textStyle="italic"/> 
+           <LinearLayout
+        	    android:id="@+id/layRenglon3"
+            	android:orientation="horizontal"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/textValores">
+        		<LinearLayout 
+              		android:id="@+id/layColumna31" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textMontoMantoRedes" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/monto_manto_redes" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layMontoMantoRedes" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+
+              		<EditText
+              		    android:id="@+id/editMontoMantoRedes_hydraulic"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_monto"
+              		    android:textSize="20sp" />
+
+              		<Switch
+              		    android:id="@+id/switchMontoMantoRedes_hydraulic"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:checked="true"
+              		    android:enabled="false"
+              		    android:layout_marginTop="20.0dp"
+              		    android:textOn="MXN"
+              		    android:textOff="USD"
+              		    android:layout_marginBottom="32dip" />
+            		</LinearLayout>
+          		</LinearLayout>	
+          		<LinearLayout 
+              		android:id="@+id/layColumna32" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textValRepNueRed" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/val_rep_nuevo_red" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layValRepNueRed" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+
+              		<EditText
+              		    android:id="@+id/editValRepNueRed_hydraulic"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_val"
+              		    android:textSize="20sp" />
+
+              		<Switch
+              		    android:id="@+id/switchValRepNueRed_hydraulic"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:checked="true"
+              		    android:enabled="false"
+              		    android:layout_marginTop="20.0dp"
+              		    android:textOn="MXN"
+              		    android:textOff="USD"
+              		    android:layout_marginBottom="32dip" />
+            		</LinearLayout>
+          		</LinearLayout>	
+          	</LinearLayout>
+          	<LinearLayout
+        	    android:id="@+id/layRenglon4"
+            	android:orientation="horizontal"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/layRenglon3">
+        		<LinearLayout 
+              		android:id="@+id/layColumna41" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textValObraCivilRepNue" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/val_obra_civil" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layValObraCivilRepNue" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+
+              		<EditText
+              		    android:id="@+id/editValObraCivilRepNue_hydraulic"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_val"
+              		    android:textSize="20sp" />
+
+              		<Switch
+              		    android:id="@+id/switchValObraCivilRepNue_hydraulic"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:checked="true"
+              		    android:enabled="false"
+              		    android:layout_marginTop="20.0dp"
+              		    android:textOn="MXN"
+              		    android:textOff="USD"
+              		    android:layout_marginBottom="32dip" />
+            		</LinearLayout>
+          		</LinearLayout>	
+          		<LinearLayout 
+              		android:id="@+id/layColumna42" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textValMaqEquiRepNu" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/val_maq_equ" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layValMaqEquiRepNu" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+
+              		<EditText
+              		    android:id="@+id/editValMaqEquiRepNu_hydraulic"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_val"
+              		    android:textSize="20sp" />
+
+              		<Switch
+              		    android:id="@+id/switchValMaqEquiRepNu_hydraulic"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:checked="true"
+              		    android:enabled="false"
+              		    android:layout_marginTop="20.0dp"
+              		    android:textOn="MXN"
+              		    android:textOff="USD"
+              		    android:layout_marginBottom="32dip" />
+            		</LinearLayout>
+          		</LinearLayout>	
+          	</LinearLayout>
+          	<LinearLayout
+        	    android:id="@+id/layRenglon5"
+            	android:orientation="horizontal"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/layRenglon4">
+        		<LinearLayout 
+              		android:id="@+id/layColumna51" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textValOtros" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/val_otros" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layValOtros" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+
+              		<EditText
+              		    android:id="@+id/editValOtros_hydraulic"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_val"
+              		    android:textSize="20sp" />
+
+              		<Switch
+              		    android:id="@+id/switchValOtros_hydraulic"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:checked="true"
+              		    android:enabled="false"
+              		    android:layout_marginTop="20.0dp"
+              		    android:textOn="MXN"
+              		    android:textOff="USD"
+              		    android:layout_marginBottom="32dip" />
+            		</LinearLayout>
+          		</LinearLayout>	
+          		<LinearLayout 
+              		android:id="@+id/layColumna52" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textValRealRed" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/val_real" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layValRealRed" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+
+              		<EditText
+              		    android:id="@+id/editValRealRed_hydraulic"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_val"
+              		    android:textSize="20sp" />
+
+              		<Switch
+              		    android:id="@+id/switchValRealRed_hydraulic"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:checked="true"
+              		    android:enabled="false"
+              		    android:layout_marginTop="20.0dp"
+              		    android:textOn="MXN"
+              		    android:textOff="USD"
+              		    android:layout_marginBottom="32dip" />
+            		</LinearLayout>
+          		</LinearLayout>	
+          	</LinearLayout>
+          	<LinearLayout 
+    	    android:id="@+id/BotonesFinal" 
+    	    android:layout_width="wrap_content" 
+    	    android:layout_height="wrap_content" 
+    	    android:layout_alignParentRight="true"
+    	    android:layout_marginTop="20dp"
+    	    android:paddingBottom="10dp"
+    	    android:layout_below="@+id/layRenglon5" 
+    	    android:orientation="horizontal">
+			     <ImageButton 
+        	    android:id="@+id/buttonSaveBot2_2_hydraulic" 
+        	    android:layout_width="wrap_content" 
+        	    android:layout_height="wrap_content" 
+        	    android:layout_marginRight="30dp" 
+        	    android:background="@mipmap/guardar" />
+        	<ImageButton 
+        	    android:id="@+id/buttonOutBot2_2_hydraulic" 
+        	    android:layout_width="wrap_content" 
+        	    android:layout_height="wrap_content" 
+        	    android:layout_marginRight="50dp" 
+        	    android:background="@mipmap/salir" />
+        	
+    	</LinearLayout>
+	</RelativeLayout>
+</ScrollView>

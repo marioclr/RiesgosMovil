@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    android:orientation="vertical" >
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#d3d3d3"
+	    android:orientation="vertical" >
+	    <LinearLayout
+	        android:id="@+id/layRenglonA"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textUbicacionHundimiento"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/ubicacion"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <EditText
+	                android:id="@+id/editTextoUbicacionHundimiento"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:ems="10"
+	                android:hint="@string/int_ubicacion" >
+	            </EditText>
+	
+	    </LinearLayout>
+		<LinearLayout
+	        android:id="@+id/layRenglon1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10.0dp"
+	        android:layout_below="@id/layRenglonA"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textGravedadHundimiento"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/grav_hun"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <Spinner
+	                android:id="@+id/spinnerGravedadHundimiento"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:background="@drawable/spinner_selector" />
+	
+	    </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

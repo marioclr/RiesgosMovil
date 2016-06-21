@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/background">
+    <RelativeLayout
+        android:id="@+id/ScrollLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp" >
+        <TextView
+            android:id="@+id/Contenido2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="33dp"
+            android:layout_marginTop="11dp"
+            android:text="@string/cont_2_2"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+        <LinearLayout 
+    	    android:id="@+id/BotonesUp" 
+    	    android:layout_width="wrap_content" 
+    	    android:layout_height="wrap_content" 
+    	    android:layout_alignParentRight="true" 
+    	    android:layout_below="@+id/Contenido2_2" 
+    	    android:layout_marginTop="10dp"
+    	    android:orientation="horizontal">
+        	<ImageButton 
+        	    android:id="@+id/buttonSaveUp2_2_historical" 
+        	    android:layout_width="wrap_content" 
+        	    android:layout_height="wrap_content" 
+        	    android:layout_marginRight="30dp" 
+        	    android:background="@mipmap/guardar" />
+        	<ImageButton 
+        	    android:id="@+id/buttonOutUp2_2_historical" 
+        	    android:layout_width="wrap_content" 
+        	    android:layout_height="wrap_content" 
+        	    android:layout_marginRight="50dp" 
+        	    android:background="@mipmap/salir" />
+        	
+    	</LinearLayout>
+        <TextView
+           android:id="@+id/textValores"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/BotonesUp"
+           android:paddingLeft="10dip"
+           android:textSize="30sp"
+           android:text="@string/valores"
+           android:textStyle="italic"/> 
+           <LinearLayout
+			    android:id="@+id/layRenglon2"
+			    android:paddingLeft="10dip"
+			    android:paddingRight="10dip"
+			    android:orientation="horizontal"
+			    android:layout_below="@+id/textValores"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content">
+			    <TextView
+                    	    android:id="@+id/Edificios"
+    	        			android:layout_width="wrap_content"
+    	        			android:layout_height="wrap_content"
+    	        			android:layout_weight="1"
+    	        			android:textSize="25sp"
+    	        			android:textStyle="italic"
+    	        			android:text="@string/edificios"
+    	        			android:layout_marginTop="23.8dp"/>
+			   
+               
+           </LinearLayout>
+           <LinearLayout
+			    android:id="@+id/layRenglon3"
+			    android:paddingLeft="10dip"
+			    android:paddingRight="10dip"
+			    android:orientation="horizontal"
+			    android:layout_below="@+id/layRenglon2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content">
+			    <LinearLayout
+			        android:id="@+id/layColumna31"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="0.20"
+			        android:orientation="vertical" >
+
+                    	<TextView
+              				    android:id="@+id/EdificioVR"
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:textSize="20sp"
+                    			android:text="@string/valor_real"
+                    			android:layout_marginTop="23.8dp"
+                    			android:textStyle="italic"/>
+                    	<EditText
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:id="@+id/editEdificiosVR_historical"
+                    			android:textSize="20sp"
+                    			android:hint="@string/int_val" />
+			    </LinearLayout>
+
+			    <LinearLayout
+			        android:id="@+id/layColumna32"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent" >
+
+              				<Switch
+              				    android:id="@+id/switchEdificiosVR_historical"
+              		    		android:layout_width="fill_parent"
+              		    		android:layout_height="wrap_content"
+              		    		android:checked="true"
+              		    		android:enabled="false"
+              		    		android:layout_marginTop="20.0dp"
+              		    		android:textOn="MXN"
+              		    		android:textOff="USD"
+              		    		android:layout_marginBottom="32dip" />
+				</LinearLayout>
+
+			     <LinearLayout
+			         android:id="@+id/layColumna33"
+			         android:layout_width="wrap_content"
+			         android:layout_height="fill_parent"
+			         android:paddingLeft="30dp"
+			         android:layout_weight="0.20"
+			         android:orientation="vertical" >
+
+                    	<TextView
+              				    android:id="@+id/EdificiosVRN"
+                    			android:layout_width="wrap_content"
+                    			android:layout_height="wrap_content"
+                    			android:textSize="20sp"
+                    			
+                    			android:text="@string/val_rep_nuev"
+                    			android:layout_marginTop="23.8dp"
+                    			android:textStyle="italic"/>
+                    	<EditText
+                    			android:layout_width="wrap_content"
+                    			android:layout_height="wrap_content"
+                    			android:id="@+id/editEdificiosVRN_historical"
+                    			android:textSize="20sp"
+                    			android:hint="@string/int_val" />
+			    </LinearLayout>
+			    <LinearLayout
+			        android:id="@+id/layColumna34"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent" >
+
+              				<Switch
+              				    android:id="@+id/switchEdificiosVRN_historical"
+              		    		android:layout_width="wrap_content"
+              		    		android:layout_height="wrap_content"
+              		    		android:checked="true"
+              		    		android:enabled="false"
+              		    		android:layout_marginTop="20.0dp"
+              		    		android:textOn="MXN"
+              		    		android:textOff="USD"
+              		    		android:layout_marginBottom="32dip" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+			    android:id="@+id/layRenglon4"
+			    android:paddingLeft="10dip"
+			    android:paddingRight="10dip"
+			    android:orientation="horizontal"
+			    android:layout_below="@+id/layRenglon3"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content">
+			    <TextView
+                    	    android:id="@+id/EquiComp"
+    	        			android:layout_width="wrap_content"
+    	        			android:layout_height="wrap_content"
+    	        			android:layout_weight="1"
+    	        			android:textSize="25sp"
+    	        			android:textStyle="italic"
+    	        			android:text="@string/equi_comp"
+    	        			android:layout_marginTop="23.8dp"/>
+			   
+               
+           </LinearLayout>
+           <LinearLayout
+			    android:id="@+id/layRenglon5"
+			    android:paddingLeft="10dip"
+			    android:paddingRight="10dip"
+			    android:orientation="horizontal"
+			    android:layout_below="@+id/layRenglon4"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content">
+
+			    <LinearLayout
+			        android:id="@+id/layColumna51"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent"
+			        android:orientation="vertical" >
+
+                    	<TextView
+              				    android:id="@+id/EquiCompVR"
+                    			android:layout_width="wrap_content"
+                    			android:layout_height="wrap_content"
+                    			android:textSize="20sp"
+                    			android:text="@string/valor_real"
+                    			android:layout_marginTop="23.8dp"
+                    			android:textStyle="italic"/>
+                    	<EditText
+                    			android:layout_width="wrap_content"
+                    			android:layout_height="wrap_content"
+                    			android:id="@+id/editEquiCompVR_historical"
+                    			android:textSize="20sp"
+                    			android:hint="@string/int_val" />
+			    </LinearLayout>
+
+			    <LinearLayout
+			        android:id="@+id/layColumna52"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent" >
+
+              				<Switch
+              				    android:id="@+id/switchEquiCompVR_historical"
+              		    		android:layout_width="wrap_content"
+              		    		android:layout_height="wrap_content"
+              		    		android:checked="true"
+              		    		android:enabled="false"
+              		    		android:layout_marginTop="20.0dp"
+              		    		android:textOn="MXN"
+              		    		android:textOff="USD"
+              		    		android:layout_marginBottom="32dip" />
+				</LinearLayout>
+
+			     <LinearLayout
+			         android:id="@+id/layColumna53"
+			         android:layout_width="wrap_content"
+			         android:layout_height="fill_parent"
+			         android:paddingLeft="30dp"
+			         android:orientation="vertical" >
+
+                    	<TextView
+              				    android:id="@+id/EquiCompVRN"
+                    			android:layout_width="wrap_content"
+                    			android:layout_height="wrap_content"
+                    			android:textSize="20sp"
+                    			android:text="@string/val_rep_nuev"
+                    			android:layout_marginTop="23.8dp"
+                    			android:textStyle="italic"/>
+                    	<EditText
+                    			android:layout_width="wrap_content"
+                    			android:layout_height="wrap_content"
+                    			android:id="@+id/editEquiCompVRN_historical"
+                    			android:textSize="20sp"
+                    			android:hint="@string/int_val" />
+			    </LinearLayout>
+			    <LinearLayout
+			        android:id="@+id/layColumna64"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent" >
+
+              				<Switch
+              				    android:id="@+id/switchEquiCompVRN_historical"
+              		    		android:layout_width="wrap_content"
+              		    		android:layout_height="wrap_content"
+              		    		android:checked="true"
+              		    		android:enabled="false"
+              		    		android:layout_marginTop="20.0dp"
+              		    		android:textOn="MXN"
+              		    		android:textOff="USD"
+              		    		android:layout_marginBottom="32dip" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+			    android:id="@+id/layRenglon6"
+			    android:paddingLeft="10dip"
+			    android:paddingRight="10dip"
+			    android:orientation="horizontal"
+			    android:layout_below="@+id/layRenglon5"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content">
+			    <TextView
+                    	    android:id="@+id/EquiElec"
+    	        			android:layout_width="wrap_content"
+    	        			android:layout_height="wrap_content"
+    	        			android:layout_weight="1"
+    	        			android:textSize="25sp"
+    	        			android:textStyle="italic"
+    	        			android:text="@string/equi_elec"
+    	        			android:layout_marginTop="23.8dp"/>
+			   
+               
+           </LinearLayout>
+           <LinearLayout
+			    android:id="@+id/layRenglon7"
+			    android:paddingLeft="10dip"
+			    android:paddingRight="10dip"
+			    android:orientation="horizontal"
+			    android:layout_below="@+id/layRenglon6"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content">
+
+			    <LinearLayout
+			        android:id="@+id/layColumna71"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent"
+			        android:orientation="vertical" >
+
+                    	<TextView
+              				    android:id="@+id/EquiElecVR"
+                    			android:layout_width="wrap_content"
+                    			android:layout_height="wrap_content"
+                    			android:textSize="20sp"
+                    			android:text="@string/valor_real"
+                    			android:layout_marginTop="23.8dp"
+                    			android:textStyle="italic"/>
+                    	<EditText
+                    			android:layout_width="wrap_content"
+                    			android:layout_height="wrap_content"
+                    			android:id="@+id/editEquiEleVR_historical"
+                    			android:textSize="20sp"
+                    			android:hint="@string/int_val" />
+			    </LinearLayout>
+
+			    <LinearLayout
+			        android:id="@+id/layColumna72"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent" >
+
+              				<Switch
+              				    android:id="@+id/switchEquiElecVR_historical"
+              		    		android:layout_width="wrap_content"
+              		    		android:layout_height="wrap_content"
+              		    		android:checked="true"
+              		    		android:enabled="false"
+              		    		android:layout_marginTop="20.0dp"
+              		    		android:textOn="MXN"
+              		    		android:textOff="USD"
+              		    		android:layout_marginBottom="32dip" />
+				</LinearLayout>
+
+			     <LinearLayout
+			         android:id="@+id/layColumna73"
+			         android:layout_width="wrap_content"
+			         android:layout_height="fill_parent"
+			         android:paddingLeft="30dp"
+			         android:orientation="vertical" >
+
+                    	<TextView
+              				    android:id="@+id/EquiElecVRN"
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:textSize="20sp"
+                    			android:text="@string/val_rep_nuev"
+                    			android:layout_marginTop="23.8dp"
+                    			android:textStyle="italic"/>
+                    	<EditText
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:id="@+id/editEquiElecVRN_historical"
+                    			android:textSize="20sp"
+                    			android:hint="@string/int_val" />
+			    </LinearLayout>
+			    <LinearLayout
+			        android:id="@+id/layColumna74"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent" >
+
+              				<Switch
+              				    android:id="@+id/switchEquiElecVRN_historical"
+              		    		android:layout_width="wrap_content"
+              		    		android:layout_height="wrap_content"
+              		    		android:checked="true"
+              		    		android:enabled="false"
+              		    		android:layout_marginTop="20.0dp"
+              		    		android:textOn="MXN"
+              		    		android:textOff="USD"
+              		    		android:layout_marginBottom="32dip" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+			    android:id="@+id/layRenglon8"
+			    android:paddingLeft="10dip"
+			    android:paddingRight="10dip"
+			    android:orientation="horizontal"
+			    android:layout_below="@+id/layRenglon7"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content">
+			    <TextView
+                    	    android:id="@+id/InvLibr"
+    	        			android:layout_width="wrap_content"
+    	        			android:layout_height="wrap_content"
+    	        			android:layout_weight="1"
+    	        			android:textSize="25sp"
+    	        			android:textStyle="italic"
+    	        			android:text="@string/inv_libr"
+    	        			android:layout_marginTop="23.8dp"/>
+			   
+               
+           </LinearLayout>
+           <LinearLayout
+			    android:id="@+id/layRenglon9"
+			    android:paddingLeft="10dip"
+			    android:paddingRight="10dip"
+			    android:orientation="horizontal"
+			    android:layout_below="@+id/layRenglon8"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content">
+			    <LinearLayout
+			        android:id="@+id/layColumna91"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="0.20"
+			        android:orientation="vertical" >
+
+                    	<TextView
+              				    android:id="@+id/InvLibrVR"
+                    			android:layout_width="wrap_content"
+                    			android:layout_height="wrap_content"
+                    			android:textSize="20sp"
+                    			android:text="@string/valor_real"
+                    			android:layout_marginTop="23.8dp"
+                    			android:textStyle="italic"/>
+                    	<EditText
+                    			android:layout_width="wrap_content"
+                    			android:layout_height="wrap_content"
+                    			android:id="@+id/editInvLibrVR_historical"
+                    			android:textSize="20sp"
+                    			android:hint="@string/int_val" />
+			    </LinearLayout>
+
+			    <LinearLayout
+			        android:id="@+id/layColumna92"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent" >
+
+              				<Switch
+              				    android:id="@+id/switchInvLibrVR_historical"
+              		    		android:layout_width="wrap_content"
+              		    		android:layout_height="wrap_content"
+              		    		android:checked="true"
+              		    		android:enabled="false"
+              		    		android:layout_marginTop="20.0dp"
+              		    		android:textOn="MXN"
+              		    		android:textOff="USD"
+              		    		android:layout_marginBottom="32dip" />
+				</LinearLayout>
+
+			     <LinearLayout
+			         android:id="@+id/layColumna93"
+			         android:layout_width="wrap_content"
+			         android:layout_height="fill_parent"
+			         android:paddingLeft="30dp"
+			         android:layout_weight="0.20"
+			         android:orientation="vertical" >
+
+                    	<TextView
+              				    android:id="@+id/InvLibrVRN"
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:textSize="20sp"
+                    			android:text="@string/val_rep_nuev"
+                    			android:layout_marginTop="23.8dp"
+                    			android:textStyle="italic"/>
+                    	<EditText
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:id="@+id/editInvLibrVRN_historical"
+                    			android:textSize="20sp"
+                    			android:hint="@string/int_val" />
+			    </LinearLayout>
+			    <LinearLayout
+			        android:id="@+id/layColumna94"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent" >
+
+              				<Switch
+              				    android:id="@+id/switchInvLibrVRN_historical"
+              		    		android:layout_width="wrap_content"
+              		    		android:layout_height="wrap_content"
+              		    		android:checked="true"
+              		    		android:enabled="false"
+              		    		android:layout_marginTop="20.0dp"
+              		    		android:textOn="MXN"
+              		    		android:textOff="USD"
+              		    		android:layout_marginBottom="32dip" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+			    android:id="@+id/layRenglon10"
+			    android:paddingLeft="10dip"
+			    android:paddingRight="10dip"
+			    android:orientation="horizontal"
+			    android:layout_below="@+id/layRenglon9"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content">
+			    <TextView
+                    	    android:id="@+id/CDs"
+    	        			android:layout_width="wrap_content"
+    	        			android:layout_height="wrap_content"
+    	        			android:layout_weight="1"
+    	        			android:textSize="25sp"
+    	        			android:textStyle="italic"
+    	        			android:text="@string/cds"
+    	        			android:layout_marginTop="23.8dp"/>
+			   
+               
+           </LinearLayout>
+           <LinearLayout
+			    android:id="@+id/layRenglon11"
+			    android:paddingLeft="10dip"
+			    android:paddingRight="10dip"
+			    android:orientation="horizontal"
+			    android:layout_below="@+id/layRenglon10"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content">
+
+			    <LinearLayout
+			        android:id="@+id/layColumna111"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent"
+			        android:orientation="vertical" >
+
+                    	<TextView
+              				    android:id="@+id/CDsVR"
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:textSize="20sp"
+                    			android:text="@string/valor_real"
+                    			android:layout_marginTop="23.8dp"
+                    			android:textStyle="italic"/>
+                    	<EditText
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:id="@+id/editCDsVR_historical"
+                    			android:textSize="20sp"
+                    			android:hint="@string/int_val" />
+			    </LinearLayout>
+
+			    <LinearLayout
+			        android:id="@+id/layColumna112"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent" >
+
+              				<Switch
+              				    android:id="@+id/switchCDsVR_historical"
+              		    		android:layout_width="wrap_content"
+              		    		android:layout_height="wrap_content"
+              		    		android:checked="true"
+              		    		android:enabled="false"
+              		    		android:layout_marginTop="20.0dp"
+              		    		android:textOn="MXN"
+              		    		android:textOff="USD"
+              		    		android:layout_marginBottom="32dip" />
+				</LinearLayout>
+
+			     <LinearLayout
+			         android:id="@+id/layColumna113"
+			         android:layout_width="wrap_content"
+			         android:layout_height="fill_parent"
+			         android:paddingLeft="30dp"
+			         android:orientation="vertical" >
+
+                    	<TextView
+              				    android:id="@+id/CDsVRN"
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:textSize="20sp"
+                    			android:text="@string/val_rep_nuev"
+                    			android:layout_marginTop="23.8dp"
+                    			android:textStyle="italic"/>
+                    	<EditText
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:id="@+id/editCDsVRN_historical"
+                    			android:textSize="20sp"
+                    			android:hint="@string/int_val" />
+			    </LinearLayout>
+			    <LinearLayout
+			        android:id="@+id/layColumna114"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent" >
+
+              				<Switch
+              				    android:id="@+id/switchCDsVRN_historical"
+              		    		android:layout_width="wrap_content"
+              		    		android:layout_height="wrap_content"
+              		    		android:checked="true"
+              		    		android:enabled="false"
+              		    		android:layout_marginTop="20.0dp"
+              		    		android:textOn="MXN"
+              		    		android:textOff="USD"
+              		    		android:layout_marginBottom="32dip" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+			    android:id="@+id/layRenglon12"
+			    android:paddingLeft="10dip"
+			    android:paddingRight="10dip"
+			    android:orientation="horizontal"
+			    android:layout_below="@+id/layRenglon11"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content">
+			    <TextView
+                    	    android:id="@+id/OtrosMed"
+    	        			android:layout_width="wrap_content"
+    	        			android:layout_height="wrap_content"
+    	        			android:layout_weight="1"
+    	        			android:textSize="25sp"
+    	        			android:textStyle="italic"
+    	        			android:text="@string/otros_medios"
+    	        			android:layout_marginTop="23.8dp"/>
+			   
+               
+           </LinearLayout>
+           <LinearLayout
+			    android:id="@+id/layRenglon13"
+			    android:paddingLeft="10dip"
+			    android:paddingRight="10dip"
+			    android:orientation="horizontal"
+			    android:layout_below="@+id/layRenglon12"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content">
+
+			    <LinearLayout
+			        android:id="@+id/layColumna131"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:orientation="vertical" >
+
+                    	<TextView
+              				    android:id="@+id/OtrosMedVR"
+                    			android:layout_width="wrap_content"
+                    			android:layout_height="wrap_content"
+                    			android:textSize="20sp"
+                    			android:text="@string/valor_real"
+                    			android:layout_marginTop="23.8dp"
+                    			android:textStyle="italic"/>
+                    	<EditText
+                    			android:layout_width="wrap_content"
+                    			android:layout_height="wrap_content"
+                    			android:id="@+id/editOtrosMedVR_historical"
+                    			android:textSize="20sp"
+                    			android:hint="@string/int_val" />
+			    </LinearLayout>
+
+			    <LinearLayout
+			        android:id="@+id/layColumna132"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent" >
+
+              				<Switch
+              				    android:id="@+id/switchOtrosMedVR_historical"
+              		    		android:layout_width="wrap_content"
+              		    		android:layout_height="wrap_content"
+              		    		android:checked="true"
+              		    		android:enabled="false"
+              		    		android:layout_marginTop="20.0dp"
+              		    		android:textOn="MXN"
+              		    		android:textOff="USD"
+              		    		android:layout_marginBottom="32dip" />
+				</LinearLayout>
+
+			     <LinearLayout
+			         android:id="@+id/layColumna133"
+			         android:layout_width="wrap_content"
+			         android:layout_height="fill_parent"
+			         android:paddingLeft="30dp"
+			         android:orientation="vertical" >
+
+                    	<TextView
+              				    android:id="@+id/OtrosMedVRN"
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:textSize="20sp"
+                    			android:text="@string/val_rep_nuev"
+                    			android:layout_marginTop="23.8dp"
+                    			android:textStyle="italic"/>
+                    	<EditText
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:id="@+id/editOtrosMedVRN_historical"
+                    			android:textSize="20sp"
+                    			android:hint="@string/int_val" />
+			    </LinearLayout>
+			    <LinearLayout
+			        android:id="@+id/layColumna134"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent" >
+
+              				<Switch
+              				    android:id="@+id/switchOtrosMedVRN_historical"
+              		    		android:layout_width="wrap_content"
+              		    		android:layout_height="wrap_content"
+              		    		android:checked="true"
+              		    		android:enabled="false"
+              		    		android:layout_marginTop="20.0dp"
+              		    		android:textOn="MXN"
+              		    		android:textOff="USD"
+              		    		android:layout_marginBottom="32dip" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+			    android:id="@+id/layRenglon14"
+			    android:paddingLeft="10dip"
+			    android:paddingRight="10dip"
+			    android:orientation="horizontal"
+			    android:layout_below="@+id/layRenglon13"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content">
+			    <TextView
+                    	    android:id="@+id/Muebles"
+    	        			android:layout_width="wrap_content"
+    	        			android:layout_height="wrap_content"
+    	        			android:layout_weight="1"
+    	        			android:textSize="25sp"
+    	        			android:textStyle="italic"
+    	        			android:text="@string/muebles"
+    	        			android:layout_marginTop="23.8dp"/>
+			   
+               
+           </LinearLayout>
+           <LinearLayout
+			    android:id="@+id/layRenglon15"
+			    android:paddingLeft="10dip"
+			    android:paddingRight="10dip"
+			    android:orientation="horizontal"
+			    android:layout_below="@+id/layRenglon14"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content">
+
+			    <LinearLayout
+			        android:id="@+id/layColumna151"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent"
+			        android:orientation="vertical" >
+
+                    	<TextView
+              				    android:id="@+id/MueblesVR"
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:textSize="20sp"
+                    			android:text="@string/valor_real"
+                    			android:layout_marginTop="23.8dp"
+                    			android:textStyle="italic"/>
+                    	<EditText
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:id="@+id/editMueblesVR_historical"
+                    			android:textSize="20sp"
+                    			android:hint="@string/int_val" />
+			    </LinearLayout>
+
+			    <LinearLayout
+			        android:id="@+id/layColumna152"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent" >
+
+              				<Switch
+              				    android:id="@+id/switchMueblesVR_historical"
+              		    		android:layout_width="wrap_content"
+              		    		android:layout_height="wrap_content"
+              		    		android:checked="true"
+              		    		android:enabled="false"
+              		    		android:layout_marginTop="20.0dp"
+              		    		android:textOn="MXN"
+              		    		android:textOff="USD"
+              		    		android:layout_marginBottom="32dip" />
+				</LinearLayout>
+
+			     <LinearLayout
+			         android:id="@+id/layColumna153"
+			         android:layout_width="wrap_content"
+			         android:layout_height="fill_parent"
+			         android:paddingLeft="30dp"
+			         android:orientation="vertical" >
+
+                    	<TextView
+              				    android:id="@+id/MueblesVRN"
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:textSize="20sp"
+                    			android:text="@string/val_rep_nuev"
+                    			android:layout_marginTop="23.8dp"
+                    			android:textStyle="italic"/>
+                    	<EditText
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:id="@+id/editMueblesVRN_historical"
+                    			android:textSize="20sp"
+                    			android:hint="@string/int_val" />
+			    </LinearLayout>
+			    <LinearLayout
+			        android:id="@+id/layColumna154"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent" >
+
+              				<Switch
+              				    android:id="@+id/switchMueblesVRN_historical"
+              		    		android:layout_width="wrap_content"
+              		    		android:layout_height="wrap_content"
+              		    		android:checked="true"
+              		    		android:enabled="false"
+              		    		android:layout_marginTop="20.0dp"
+              		    		android:textOn="MXN"
+              		    		android:textOff="USD"
+              		    		android:layout_marginBottom="32dip" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+			    android:id="@+id/layRenglon16"
+			    android:paddingLeft="10dip"
+			    android:paddingRight="10dip"
+			    android:orientation="horizontal"
+			    android:layout_below="@+id/layRenglon15"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content">
+			    <TextView
+                    	    android:id="@+id/Enseres"
+    	        			android:layout_width="wrap_content"
+    	        			android:layout_height="wrap_content"
+    	        			android:layout_weight="1"
+    	        			android:textSize="25sp"
+    	        			android:textStyle="italic"
+    	        			android:text="@string/enseres"
+    	        			android:layout_marginTop="23.8dp"/>
+			   
+               
+           </LinearLayout>
+           <LinearLayout
+			    android:id="@+id/layRenglon17"
+			    android:paddingLeft="10dip"
+			    android:paddingRight="10dip"
+			    android:orientation="horizontal"
+			    android:layout_below="@+id/layRenglon16"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content">
+
+			    <LinearLayout
+			        android:id="@+id/layColumna171"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent"
+			        android:orientation="vertical" >
+
+                    	<TextView
+              				    android:id="@+id/EnseresVR"
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:textSize="20sp"
+                    			android:text="@string/valor_real"
+                    			android:layout_marginTop="23.8dp"
+                    			android:textStyle="italic"/>
+                    	<EditText
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:id="@+id/editEnseresVR_historical"
+                    			android:textSize="20sp"
+                    			android:hint="@string/int_val" />
+			    </LinearLayout>
+
+			    <LinearLayout
+			        android:id="@+id/layColumna172"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent" >
+
+              				<Switch
+              				    android:id="@+id/switchEnseresVR_historical"
+              		    		android:layout_width="wrap_content"
+              		    		android:layout_height="wrap_content"
+              		    		android:checked="true"
+              		    		android:enabled="false"
+              		    		android:layout_marginTop="20.0dp"
+              		    		android:textOn="MXN"
+              		    		android:textOff="USD"
+              		    		android:layout_marginBottom="32dip" />
+				</LinearLayout>
+
+			     <LinearLayout
+			         android:id="@+id/layColumna173"
+			         android:layout_width="wrap_content"
+			         android:layout_height="fill_parent"
+			         android:paddingLeft="30dp"
+			         android:orientation="vertical" >
+
+                    	<TextView
+              				    android:id="@+id/EnseresVRN"
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:textSize="20sp"
+                    			android:text="@string/val_rep_nuev"
+                    			android:layout_marginTop="23.8dp"
+                    			android:textStyle="italic"/>
+                    	<EditText
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:id="@+id/editEnseresVRN_historical"
+                    			android:textSize="20sp"
+                    			android:hint="@string/int_val" />
+			    </LinearLayout>
+			    <LinearLayout
+			        android:id="@+id/layColumna174"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent" >
+
+              				<Switch
+              				    android:id="@+id/switchEnseresVRN_historical"
+              		    		android:layout_width="wrap_content"
+              		    		android:layout_height="wrap_content"
+              		    		android:checked="true"
+              		    		android:enabled="false"
+              		    		android:layout_marginTop="20.0dp"
+              		    		android:textOn="MXN"
+              		    		android:textOff="USD"
+              		    		android:layout_marginBottom="32dip" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+			    android:id="@+id/layRenglon18"
+			    android:paddingLeft="10dip"
+			    android:paddingRight="10dip"
+			    android:orientation="horizontal"
+			    android:layout_below="@+id/layRenglon17"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content">
+			    <TextView
+                    	    android:id="@+id/Total"
+    	        			android:layout_width="wrap_content"
+    	        			android:layout_height="wrap_content"
+    	        			android:layout_weight="1"
+    	        			android:textSize="25sp"
+    	        			android:textStyle="italic"
+    	        			android:text="@string/total"
+    	        			android:layout_marginTop="23.8dp"/>
+			   
+               
+           </LinearLayout>
+           <LinearLayout
+			    android:id="@+id/layRenglon19"
+			    android:paddingLeft="10dip"
+			    android:paddingRight="10dip"
+			    android:orientation="horizontal"
+			    android:layout_below="@+id/layRenglon18"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content">
+
+			    <LinearLayout
+			        android:id="@+id/layColumna191"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent"
+			        android:orientation="vertical" >
+
+                    	<TextView
+              				    android:id="@+id/TotalVR"
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:textSize="20sp"
+                    			android:text="@string/sum_tota"
+                    			android:layout_marginTop="23.8dp"
+                    			android:textStyle="italic"/>
+                    	<EditText
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:id="@+id/editTotalVR_historical"
+                    			android:textSize="20sp"
+                    			android:hint="@string/total" />
+			    </LinearLayout>
+
+			     <LinearLayout
+			         android:id="@+id/layColumna193"
+			         android:layout_width="wrap_content"
+			         android:layout_height="fill_parent"
+			         android:paddingLeft="163dp"
+			         android:orientation="vertical" >
+
+                    	<TextView
+              				    android:id="@+id/ToatlVRN"
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:textSize="20sp"
+                    			android:text="@string/sum_tota_rep"
+                    			android:layout_marginTop="23.8dp"
+                    			android:textStyle="italic"/>
+                    	<EditText
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:id="@+id/editTotalVRN_historical"
+                    			android:textSize="20sp"
+                    			android:hint="@string/total" />
+			    </LinearLayout>
+			</LinearLayout>
+			<LinearLayout 
+    	    android:id="@+id/BotonesFinal" 
+    	    android:layout_width="wrap_content" 
+    	    android:layout_height="wrap_content" 
+    	    android:layout_alignParentRight="true"
+    	    android:layout_marginTop="20dp"
+    	    android:paddingBottom="10dp"
+    	    android:layout_below="@+id/layRenglon19" 
+    	    android:orientation="horizontal">
+			     <ImageButton 
+        	    android:id="@+id/buttonSaveBot2_2_historical" 
+        	    android:layout_width="wrap_content" 
+        	    android:layout_height="wrap_content" 
+        	    android:layout_marginRight="30dp" 
+        	    android:background="@mipmap/guardar" />
+        	<ImageButton 
+        	    android:id="@+id/buttonOutBot2_2_historical" 
+        	    android:layout_width="wrap_content" 
+        	    android:layout_height="wrap_content" 
+        	    android:layout_marginRight="50dp" 
+        	    android:background="@mipmap/salir" />
+        	
+    	</LinearLayout>
+	</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical"
+    android:paddingLeft="10dip" >
+
+    <ImageView
+        android:id="@+id/PropertyImage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/login_header" />
+
+    <LinearLayout
+        android:id="@+id/BotonesFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="870dp"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp" >
+
+        <ImageButton
+            android:id="@+id/buttonSaveBotAtaguia_dams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:background="@mipmap/guardar" />
+
+        <ImageButton
+            android:id="@+id/buttonOutBotAtaguia_dams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:background="@mipmap/salir" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/prot_danos"
+        android:textSize="50sp"
+        android:textStyle="italic" />
+
+    <RelativeLayout
+        android:id="@+id/TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp" ><TextView
+            android:id="@+id/ListaAtaguia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/lista_ataguia"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+    <ImageButton
+        android:id="@+id/buttonAgregarAtaguia_dams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ListaAtaguia"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/ListaAtaguia"
+        android:background="@mipmap/agregar" />
+
+    </RelativeLayout>
+
+    
+
+    <ListView
+        android:id="@+id/listAtaguia_dams"
+        android:layout_width="fill_parent"
+        android:layout_height="51dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.16"
+        android:background="@android:color/background_light"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/background_dark"
+        android:dividerHeight="2dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="5dp"
+        android:scrollbarStyle="outsideOverlay" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</LinearLayout>

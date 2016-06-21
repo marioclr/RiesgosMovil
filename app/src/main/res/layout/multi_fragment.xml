@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/multi_fragment_id"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:layout_weight="1" >
+	    <fragment
+	        android:id="@+id/fragmentPuente"
+	        android:name="com.mclr.mini.riesgosmovil.fragmentos.lists.PuenteFragment"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" />
+ 	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:layout_weight="1" >
+	    <fragment
+	        android:id="@+id/fragmentTunel"
+	        android:name="com.mclr.mini.riesgosmovil.fragmentos.lists.TunelFragment"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" />
+	</LinearLayout>
+<!-- 	<LinearLayout  -->
+<!-- 	    android:layout_width="fill_parent" -->
+<!-- 	    android:layout_height="fill_parent" -->
+<!-- 	    android:orientation="vertical" -->
+<!-- 	    android:layout_weight="1" > -->
+<!-- 	    <fragment -->
+<!-- 	        android:id="@+id/fragmentDique" -->
+<!-- 	        android:name="com.jibda.riesgosmovil.fragmentos.lists.DiqueFragment" -->
+<!-- 	        android:layout_width="fill_parent" -->
+<!-- 	        android:layout_height="wrap_content" /> -->
+<!--     </LinearLayout> -->
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="horizontal" >
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView 
+            android:id="@+id/textIdentificadorFilaCortina"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FF8C00"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Cortina número"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textTamañoFilaCortina"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Tamaño de la Cortina"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textComportamientoFilaCortina"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FF8C00"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Comportamiento de la Cortina"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textTipoFilaCortina"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Tipo de la Cortina"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textMaterialFilaCortina"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FF8C00"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Material de la Cortina"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textAlturaMaximaFilaCortina"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Altura máxima de la Cortina"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textElevacionCoronaFilaCortina"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FF8C00"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Longitud de la Cortina"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textLongitudFilaCortina"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Longitud de la Cortina"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textAnchoFilaCortina"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FF8C00"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Ancho de la Cortina"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textTaludesAguasArribaFilaCortina"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Taludes Aguas Arriba de la Cortina"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textTaludesAguasAbajoFilaCortina"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FF8C00"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Taludes Aguas Abajo de la Cortina"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textAlturaParapetoFilaCortina"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Altura del Parapeto de la Cortina"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <TextView 
+            android:id="@+id/textVolumenCuerpoFilaCortina"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FF8C00"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Volumen del Cuerpo de la Cortina"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textAlturaSobreCalceFilaCortina"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Altura Sobre el Calce de la Cortina"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView 
+            android:id="@+id/textOtrasCaracteristicasFilaCortina"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FF8C00"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Otras Características de la Cortina"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,1517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ScrollLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/PropertyImage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/login_header"/>
+
+        <RelativeLayout
+            android:id="@+id/Encabezado"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/imageBien_aquaculture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:paddingLeft="10dp"
+                android:src="@mipmap/aquaculture"/>
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="70dp"
+                android:layout_toRightOf="@+id/imageBien_aquaculture"
+                android:text="@string/acui"
+                android:textSize="50sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/Contenido1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/imageBien_aquaculture"
+                android:layout_marginRight="106dp"
+                android:layout_marginTop="19dp"
+                android:text="@string/cont_1_2"
+                android:textSize="30sp"
+                android:textStyle="italic"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/BotonesUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/Encabezado"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/buttonSaveUp1_2_aquaculture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:background="@mipmap/guardar"/>
+
+            <ImageButton
+                android:id="@+id/buttonOutUp1_2_aquaculture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:background="@mipmap/salir"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layRenglon1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/BotonesUp"
+            android:layout_marginTop="20.0dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layColumna11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    android:id="@+id/textNombre"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/nombre"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <LinearLayout
+                    android:id="@+id/layNombre"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editNombre_aquaculture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/int_nombre"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    android:id="@+id/textTipoCenAcu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tipo_cen_acu"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <LinearLayout
+                    android:id="@+id/layTipoCenAcu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinnerTipoCenAcu_aquaculture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_selector"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textCaractGeo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layRenglon1"
+            android:layout_marginTop="20.0dp"
+            android:paddingLeft="10dip"
+            android:text="@string/caract_geo"
+            android:textSize="30sp"
+            android:textStyle="italic"/>
+
+        <LinearLayout
+            android:id="@+id/layRenglon7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textCaractGeo"
+            android:layout_marginTop="20.0dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip">
+
+            <LinearLayout
+                android:id="@+id/layColumna71"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    android:id="@+id/textMunicipio"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/municipio"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <LinearLayout
+                    android:id="@+id/layMunicipio"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editMunicipio_aquaculture"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/int_mun"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna72"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    android:id="@+id/textColonia"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/colonia"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <LinearLayout
+                    android:id="@+id/layColonia"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editColonia_aquaculture"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/int_colo"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna73"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    android:id="@+id/textCP"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cp"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <LinearLayout
+                    android:id="@+id/layCP"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editCp_aquaculture"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/int_cp"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/BotonCP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/buttonCP_aquaculture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/buscar"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layRenglon2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layRenglon7"
+            android:layout_marginTop="20.0dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip">
+
+            <LinearLayout
+                android:id="@+id/layColumna21"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    android:id="@+id/textCalle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/calle"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <LinearLayout
+                    android:id="@+id/layCalle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editCalle_aquaculture"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/int_calle"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna23"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    android:id="@+id/textEstado"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/estado"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <LinearLayout
+                    android:id="@+id/layEstado"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editEstado_aquaculture"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/int_esta"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/BotonUbicacion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/layRenglon2"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/buttonUbicacion_aquaculture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="23.8dp"
+                android:background="@mipmap/ubicacion"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layUbicacion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BotonUbicacion"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip">
+
+            <LinearLayout
+                android:id="@+id/Longitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/LongitudText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23.8dp"
+                    android:text="@string/longitud"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <EditText
+                    android:id="@+id/editLongitud_aquaculture"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/int_lon"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Latitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/LatitudText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23.8dp"
+                    android:text="@string/latitud"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <EditText
+                    android:id="@+id/editLatitud_aquaculture"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/int_lat"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Altitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/AltitudText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23.8dp"
+                    android:text="@string/altitud"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <EditText
+                    android:id="@+id/editAltitud_aquaculture"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/int_alt"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textCaractCons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layUbicacion"
+            android:layout_marginTop="20.0dp"
+            android:paddingLeft="10dip"
+            android:text="@string/caract_cons"
+            android:textSize="30sp"
+            android:textStyle="italic"/>
+
+        <LinearLayout
+            android:id="@+id/layRenglon3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textCaractCons"
+            android:layout_marginTop="20.0dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layColumna31"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    android:id="@+id/textTipoEstru"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tipo_estru"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <LinearLayout
+                    android:id="@+id/layTipoEstru"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinnerTipoEstru_aquaculture"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_selector"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna32"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    android:id="@+id/textTipoCime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tipo_cime"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <LinearLayout
+                    android:id="@+id/layTipoCime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinnerTipoCime_aquaculture"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_selector"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layRenglon4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layRenglon3"
+            android:layout_marginTop="20.0dp"
+            android:baselineAligned="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layColumna41"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    android:id="@+id/textTipoHerre"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tipo_herre"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <LinearLayout
+                    android:id="@+id/layTipoHerre"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinnerTipoHerre_aquaculture"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_selector"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna42"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    android:id="@+id/textTipoVidri"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tipo_vidri"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <LinearLayout
+                    android:id="@+id/layTipoVidri"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinnerTipoVidri_aquaculture"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_selector"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layRenglon5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layRenglon4"
+            android:layout_marginTop="20.0dp"
+            android:baselineAligned="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layColumna51"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    android:id="@+id/textTipoFacha"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tipo_facha"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <LinearLayout
+                    android:id="@+id/layTipoFacha"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinnerTipoFacha_aquaculture"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_selector"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna52"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    android:id="@+id/textMuros"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/muros"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <LinearLayout
+                    android:id="@+id/layMuros"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinnerMuros_aquaculture"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_selector"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layRenglon6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layRenglon5"
+            android:layout_marginTop="20.0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="10dip">
+
+            <TextView
+                android:id="@+id/textInstaEspe"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/insta_espe"
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+            <LinearLayout
+                android:id="@+id/layInstaEspe"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editInstaEspe_aquaculture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/int_insta_espe"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textSiniestralidad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layRenglon6"
+            android:layout_marginTop="20.0dp"
+            android:paddingLeft="10dip"
+            android:text="@string/siniestralidad"
+            android:textSize="30sp"
+            android:textStyle="italic"/>
+
+        <LinearLayout
+            android:id="@+id/Sini1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textSiniestralidad"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip">
+
+            <LinearLayout
+                android:id="@+id/Sini11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    android:id="@+id/textImporte2013"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2013"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <LinearLayout
+                    android:id="@+id/layImporte2013"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editImporte2013_aquaculture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp"/>
+
+                    <Switch
+                        android:id="@+id/switchImporte2013_aquaculture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN"/>
+
+                    <LinearLayout
+                        android:id="@+id/layDef2013"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp">
+
+                        <EditText
+                            android:id="@+id/editDef2013_aquaculture"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp">
+
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini1"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip">
+
+            <LinearLayout
+                android:id="@+id/Sini21"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    android:id="@+id/textImporte2012"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2012"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <LinearLayout
+                    android:id="@+id/layImporte2012"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editImporte2012_aquaculture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp"/>
+
+                    <Switch
+                        android:id="@+id/switchImporte2012_aquaculture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN"/>
+
+                    <LinearLayout
+                        android:id="@+id/layDef2012"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp">
+
+                        <EditText
+                            android:id="@+id/editDef2012_aquaculture"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini2"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip">
+
+            <LinearLayout
+                android:id="@+id/Sini31"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    android:id="@+id/textImporte2011"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2011"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <LinearLayout
+                    android:id="@+id/layImporte2011"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editImporte2011_aquaculture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp"/>
+
+                    <Switch
+                        android:id="@+id/switchImporte2011_aquaculture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN"/>
+
+                    <LinearLayout
+                        android:id="@+id/layDef2011"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp">
+
+                        <EditText
+                            android:id="@+id/editDef2011_aquaculture"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini3"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip">
+
+            <LinearLayout
+                android:id="@+id/Sini41"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    android:id="@+id/textImporte2010"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2010"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <LinearLayout
+                    android:id="@+id/layImporte2010"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editImporte2010_aquaculture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp"/>
+
+                    <Switch
+                        android:id="@+id/switchImporte2010_aquaculture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN"/>
+
+                    <LinearLayout
+                        android:id="@+id/layDef2010"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp">
+
+                        <EditText
+                            android:id="@+id/editDef2010_aquaculture"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini4"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip">
+
+            <LinearLayout
+                android:id="@+id/Sini51"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    android:id="@+id/textImporte2009"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2009"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <LinearLayout
+                    android:id="@+id/layImporte2009"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editImporte2009_aquaculture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp"/>
+
+                    <Switch
+                        android:id="@+id/switchImporte2009_aquaculture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN"/>
+
+                    <LinearLayout
+                        android:id="@+id/layDef2009"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp">
+
+                        <EditText
+                            android:id="@+id/editDef2009_aquaculture"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini5"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip">
+
+            <LinearLayout
+                android:id="@+id/Sini61"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    android:id="@+id/textImporte2008"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2008"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <LinearLayout
+                    android:id="@+id/layImporte2008"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editImporte2008_aquaculture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp"/>
+
+                    <Switch
+                        android:id="@+id/switchImporte2008_aquaculture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN"/>
+
+                    <LinearLayout
+                        android:id="@+id/layDef2008"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp">
+
+                        <EditText
+                            android:id="@+id/editDef2008_aquaculture"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini6"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip">
+
+            <LinearLayout
+                android:id="@+id/Sini71"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    android:id="@+id/textImporte2007"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2007"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <LinearLayout
+                    android:id="@+id/layImporte2007"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editImporte2007_aquaculture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp"/>
+
+                    <Switch
+                        android:id="@+id/switchImporte2007_aquaculture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN"/>
+
+                    <LinearLayout
+                        android:id="@+id/layDef2007"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp">
+
+                        <EditText
+                            android:id="@+id/editDef2007_aquaculture"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini7"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip">
+
+            <LinearLayout
+                android:id="@+id/Sini81"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    android:id="@+id/textImporte2006"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2006"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <LinearLayout
+                    android:id="@+id/layImporte2006"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editImporte2006_aquaculture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp"/>
+
+                    <Switch
+                        android:id="@+id/switchImporte2006_aquaculture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN"/>
+
+                    <LinearLayout
+                        android:id="@+id/layDef2006"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp">
+
+                        <EditText
+                            android:id="@+id/editDef2006_aquaculture"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini9"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini8"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip">
+
+            <LinearLayout
+                android:id="@+id/Sini91"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    android:id="@+id/textImporte2005"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2005"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <LinearLayout
+                    android:id="@+id/layImporte2005"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editImporte2005_aquaculture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp"/>
+
+                    <Switch
+                        android:id="@+id/switchImporte2005_aquaculture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN"/>
+
+                    <LinearLayout
+                        android:id="@+id/layDef2005"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp">
+
+                        <EditText
+                            android:id="@+id/editDef2005_aquaculture"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini9"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip">
+
+            <LinearLayout
+                android:id="@+id/Sini101"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    android:id="@+id/textImporte2004"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2004"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <LinearLayout
+                    android:id="@+id/layImporte2004"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editImporte2004_aquaculture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp"/>
+
+                    <Switch
+                        android:id="@+id/switchImporte2004_aquaculture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN"/>
+
+                    <LinearLayout
+                        android:id="@+id/layDef2004"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp">
+
+                        <EditText
+                            android:id="@+id/editDef2004_aquaculture"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/BotonesFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/Sini10"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <ImageButton
+                android:id="@+id/buttonSaveBot1_2_aquaculture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:background="@mipmap/guardar"/>
+
+            <ImageButton
+                android:id="@+id/buttonOutBot1_2_aquaculture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:background="@mipmap/salir"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

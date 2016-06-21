@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    android:orientation="vertical" >
+
+	<LinearLayout
+        android:id="@+id/layRenglon1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+            <TextView
+                android:id="@+id/textPuenteEsPrincipal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="@string/puente_principal"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <CheckBox
+                android:id="@+id/checkEsPrincipalDialogPuente"
+                android:gravity="center_vertical|center"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ems="10" >
+                <requestFocus />
+            </CheckBox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layRenglon2"
+        android:layout_below="@id/layRenglon1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+            <TextView
+                android:id="@+id/textNombrePuente"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="@string/nombre_ref_puente"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/editTextoNombreDialogPuente"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Ingrese el Nombre del Puente"
+                android:inputType="textPersonName" >
+            </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layRenglon3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layRenglon2"
+        android:layout_marginTop="20.0dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+            <TextView
+                android:id="@+id/textLongitudPuente"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="@string/longitud_puente"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+	        <EditText
+	            android:id="@+id/editTextoLongitudDialogPuente"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+	            android:ems="10"
+	            android:hint="Ingrese la Longitud del Puente"
+	            android:inputType="textPersonName" >
+	        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layRenglon4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layRenglon3"
+        android:layout_marginTop="20.0dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+
+            <TextView
+                android:id="@+id/textVRNPuente"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="@string/VRN_puente"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+	        <EditText
+	            android:id="@+id/editTextoVRNDialogPuente"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+	            android:ems="10"
+	            android:hint="Ingrese Valor de reposición a nuevo del Puente"
+	            android:inputType="textPersonName" >
+	        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layRenglon5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layRenglon4"
+        android:layout_marginTop="20.0dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+
+            <TextView
+                android:id="@+id/textTipoPuente"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="@string/tipo_puente"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <Spinner
+                android:id="@+id/spinnerTipoDialogPuente"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/spinner_selector" />
+
+    </LinearLayout>
+
+</RelativeLayout>

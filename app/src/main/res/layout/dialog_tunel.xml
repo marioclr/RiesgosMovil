@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layRenglon1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+            <TextView
+                android:id="@+id/textNombreTunel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="@string/nombre_ref_tunel"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+		    <EditText
+		       android:id="@+id/editTextoNombreDialogTunel"
+		       android:layout_width="fill_parent"
+		       android:layout_height="fill_parent"
+		       android:layout_weight="1"
+		       android:ems="10"
+		       android:hint="Ingrese el Nombre del Tunel"
+		       android:inputType="textPersonName" >
+		      <requestFocus />
+		    </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layRenglon2"
+        android:layout_below="@id/layRenglon1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+            <TextView
+                android:id="@+id/textLongitudTunel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="@string/longitud_tunel"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+		    <EditText
+		       android:id="@+id/editTextoLongitudDialogTunel"
+		       android:layout_width="fill_parent"
+		       android:layout_height="fill_parent"
+		       android:layout_weight="1"
+		       android:ems="10"
+		       android:hint="Ingrese la longitud del tunel"
+		       android:inputType="textPersonName" >
+
+		   </EditText>
+   </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layRenglon3"
+        android:layout_below="@id/layRenglon2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+            <TextView
+                android:id="@+id/textVRNTunel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="@string/VRN_tunel"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+		   <EditText
+		       android:id="@+id/editTextoVRNDialogTunel"
+		       android:layout_width="fill_parent"
+		       android:layout_height="fill_parent"
+		       android:layout_weight="1"
+		       android:ems="10"
+		       android:hint="Ingrese el Valor de reposición a nuevo del Tunel"
+		       android:inputType="textPersonName" >
+		      <requestFocus />
+		   </EditText>
+   </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layRenglon4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layRenglon3"
+        android:layout_marginTop="20.0dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+       <TextView 
+            android:id="@+id/textTipoDialogTunel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:text="@string/tipo_tunel"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+       <Spinner
+            android:id="@+id/spinnerTipoDialogTunel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_selector" />
+    </LinearLayout>
+
+</RelativeLayout>

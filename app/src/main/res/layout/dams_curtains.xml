@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/PropertyImage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/login_header" />
+
+   <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ListaCortinas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/lista_cortinas"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+        <ImageButton
+            android:id="@+id/buttonAgregarCortinas_dams"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar"
+            android:background="@mipmap/agregar" />
+
+    </LinearLayout>
+
+   <HorizontalScrollView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:orientation="vertical" > 
+	
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="50dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_weight="0.80"
+		        android:background="@android:color/darker_gray"
+		        android:gravity="center"
+		        android:orientation="horizontal" >
+
+		        <TextView 
+		            android:id="@+id/textIdentificadorFilaCortina"
+		            android:gravity="center_horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="Número"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		        <TextView 
+		            android:id="@+id/textTamañoFilaCortina"
+		            android:gravity="center_horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="Tamaño"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		        <TextView 
+		            android:id="@+id/textComportamientoFilaCortina"
+		            android:gravity="center_horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="Comportamiento"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		        <TextView 
+		            android:id="@+id/textTipoFilaCortina"
+		            android:gravity="center_horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="Tipo"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		        <TextView 
+		            android:id="@+id/textMaterialFilaCortina"
+		            android:gravity="center_horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="Material"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		        <TextView 
+		            android:id="@+id/textAlturaMaximaFilaCortina"
+		            android:gravity="center_horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="Altura máxima"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		        <TextView 
+		            android:id="@+id/textElevacionCoronaFilaCortina"
+		            android:gravity="center_horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="Elevación"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		        <TextView 
+		            android:id="@+id/textLongitudFilaCortina"
+		            android:gravity="center_horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="Longitud"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		        <TextView 
+		            android:id="@+id/textAnchoFilaCortina"
+		            android:gravity="center_horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="Ancho"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		        <TextView 
+		            android:id="@+id/textTaludesAguasArribaFilaCortina"
+		            android:gravity="center_horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="Taludes Aguas Arriba"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		        <TextView 
+		            android:id="@+id/textTaludesAguasAbajoFilaCortina"
+		            android:gravity="center_horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="Taludes Aguas Abajo"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		        <TextView 
+		            android:id="@+id/textAlturaParapetoFilaCortina"
+		            android:gravity="center_horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="Altura del Parapeto"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		        <TextView 
+		            android:id="@+id/textVolumenCuerpoFilaCortina"
+		            android:gravity="center_horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="Volumen del Cuerpo"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		        <TextView 
+		            android:id="@+id/textAlturaSobreCalceFilaCortina"
+		            android:gravity="center_horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="Altura Sobre el Calce"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		        <TextView 
+		            android:id="@+id/textOtrasCaracteristicasFilaCortina"
+		            android:gravity="center_horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="Otras Características"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		    </LinearLayout>
+	
+			<ListView
+			    android:id="@+id/listCortinas_dams"
+			    android:layout_width="match_parent"
+			    android:layout_height="340dp"
+			    android:layout_marginLeft="10dp"
+			    android:layout_marginRight="10dp"
+			    android:layout_marginTop="10dp"
+			    android:layout_weight="0.66"
+			    android:background="@android:color/background_light"
+			    android:cacheColorHint="@android:color/transparent"
+			    android:divider="@android:color/background_dark"
+			    android:dividerHeight="2dp"
+			    android:paddingBottom="5dp"
+			    android:paddingLeft="8dp"
+			    android:paddingRight="8dp"
+			    android:paddingTop="5dp"
+			    android:scrollbarStyle="outsideOverlay" >
+			</ListView>
+		</LinearLayout>
+   </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/BotonesFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="870dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp" >
+
+        <ImageButton
+            android:id="@+id/buttonSaveBotCortinas_dams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:background="@mipmap/guardar" />
+
+        <ImageButton
+            android:id="@+id/buttonOutBotCortinas_dams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:background="@mipmap/salir" />
+    </LinearLayout>
+
+</LinearLayout>

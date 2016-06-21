@@ -1,0 +1,2709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ScrollLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/PropertyImage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/login_header" />
+
+        <RelativeLayout
+            android:id="@+id/Encabezado"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp" >
+
+            <ImageView
+                android:id="@+id/imageBien_hydraulic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:padding="5dp"
+                android:src="@mipmap/hydraulic" />
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="70dp"
+                android:layout_toRightOf="@+id/imageBien_hydraulic"
+                android:text="@string/infra_hidr"
+                android:textSize="50sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/Contenido1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/imageBien_hydraulic"
+                android:layout_marginRight="33dp"
+                android:layout_marginTop="19dp"
+                android:text="@string/cont_1_2"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/BotonesUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/Encabezado"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/buttonSaveUp1_2_hydraulic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:background="@mipmap/guardar" />
+
+            <ImageButton
+                android:id="@+id/buttonOutUp1_2_hydraulic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:background="@mipmap/salir" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layRenglon1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/BotonesUp"
+            android:layout_marginTop="20.0dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/layColumna11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textFechaConstruccion"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fecha_const"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <EditText
+                    android:id="@+id/editFechaCons_hydraulic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20.0dp"
+                    android:hint="@string/int_fecha_cons"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/layFechaConst"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <DatePicker
+                        android:id="@+id/pickerFechaConst_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+                
+                <TextView
+                    android:id="@+id/textNombre"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/nombre"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+                 <LinearLayout
+                    android:id="@+id/layNombre"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                    <EditText
+                    android:id="@+id/editNombre_hydraulic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/int_nombre"
+                    android:textSize="20sp" />
+                     </LinearLayout>
+                
+                <TextView
+                    android:id="@+id/textTipoSuelo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20.0dp"
+                    android:text="@string/tipo_suelo"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layTipoSuelo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                    <Spinner
+              		    android:id="@+id/spinnerTipoSuelo_hydraulic"
+                  		android:layout_width="fill_parent"
+                  		android:layout_height="wrap_content"
+                  		android:background="@drawable/spinner_selector" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textRedesPotable"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_weight="1"
+                    android:text="@string/redes_potable"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layRedesPotable"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <Spinner
+                        android:id="@+id/spinnerRedesPotable_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_selector" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textRedesDesague"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/redes_desague"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layRedesDesague"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <Spinner
+                        android:id="@+id/spinnerRedesDesague_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_selector" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/CuerpoLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23.8dp"
+                    android:layout_weight="1"
+                    android:text="@string/cuerpo"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <RadioGroup
+                    android:id="@+id/radioCuerpo_hidraulic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="20.0dp"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radioMar_hydraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mar" />
+
+                    <RadioButton
+                        android:id="@+id/radioLago_hydraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lago" />
+
+                    <RadioButton
+                        android:id="@+id/radioLaguna_hydraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/laguna" />
+
+                    <RadioButton
+                        android:id="@+id/radioRio_hydraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rio" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/CheckBox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layRenglon1"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <TextView
+                android:id="@+id/ExpoText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/exis"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:id="@+id/CheckBox2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/checkboxInundacion_hydraulic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/inun" />
+
+                <CheckBox
+                    android:id="@+id/checkboxHuracan_hydraulic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/hura" />
+
+                <CheckBox
+                    android:id="@+id/checkboxTerremoto_hydraulic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/terre" />
+
+                <CheckBox
+                    android:id="@+id/checkboxDeslave_hydraulic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/des" />
+
+                <CheckBox
+                    android:id="@+id/checkboxDerrumbe_hydraulic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/derr" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textCaractGeo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CheckBox"
+            android:layout_marginTop="20.0dp"
+            android:paddingLeft="10dip"
+            android:text="@string/caract_geo"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/layRenglon19"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textCaractGeo"
+            android:layout_marginTop="20.0dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <LinearLayout
+                android:id="@+id/layColumna191"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textMunicipio"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/municipio"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layMunicipio"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editMunicipio_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/int_mun"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna192"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textColonia"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/colonia"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layColonia"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editColonia_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/int_colo"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna193"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textCP"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cp"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layCP"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editCp_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/int_cp"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/BotonCP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/buttonCP_hydarulic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/buscar" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layRenglon2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layRenglon19"
+            android:layout_marginTop="20.0dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip" >
+
+            <LinearLayout
+                android:id="@+id/layColumna21"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textCalle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/calle"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layCalle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editCalle_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/int_calle"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna23"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textEstado"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/estado"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layEstado"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editEstado_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/int_esta"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/BotonUbicacion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/layRenglon2"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/buttonUbicacion_hydraulic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="23.8dp"
+                android:background="@mipmap/ubicacion" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layUbicacion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BotonUbicacion"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <LinearLayout
+                android:id="@+id/Longitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/LongitudText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23.8dp"
+                    android:text="@string/longitud"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <EditText
+                    android:id="@+id/editLongitud_hydraulic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/int_lon"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Latitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/LatitudText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23.8dp"
+                    android:text="@string/latitud"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <EditText
+                    android:id="@+id/editLatitud_hydraulic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/int_lat"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Altitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/AltitudText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23.8dp"
+                    android:text="@string/altitud"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <EditText
+                    android:id="@+id/editAltitud_hydraulic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/int_alt"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textCaracConst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layUbicacion"
+            android:layout_marginTop="20.0dp"
+            android:paddingLeft="10dip"
+            android:text="@string/caract_cons"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/layRenglon6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textCaracConst"
+            android:layout_marginTop="20.0dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/layColumna61"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textTipoEstruc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tipo_estru"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layTipoEstruc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <Spinner
+                        android:id="@+id/spinnerTipoEstruc_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_selector" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna62"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textMuros"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/muros"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layMuros"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <Spinner
+                        android:id="@+id/spinnerMuros_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_selector" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layRenglon7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layRenglon6"
+            android:layout_marginTop="20.0dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/layColumna71"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textTipoCimen"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tipo_cime"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layTipoCimen"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <Spinner
+                        android:id="@+id/spinnerTipoCimen_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_selector" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna72"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textCaptacion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layRenglon7"
+            android:layout_marginTop="20.0dp"
+            android:paddingLeft="10dip"
+            android:text="@string/capta"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/layRenglon8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textCaptacion"
+            android:layout_marginTop="20.0dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip" >
+
+            <LinearLayout
+                android:id="@+id/layColumna81"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textTipoCapta"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tipo_capta"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layTipoCapta"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <RadioGroup
+                        android:id="@+id/radioTipoCapta_hidraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radioPozos_hydraulic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pozos" />
+
+                        <RadioButton
+                            android:id="@+id/radioBocatomas_hydraulic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bocatomas" />
+
+                        <RadioButton
+                            android:id="@+id/radioGalFil_hydraulic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gal_fil" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textTratamiento"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layRenglon8"
+            android:layout_marginTop="20.0dp"
+            android:paddingLeft="10dip"
+            android:text="@string/trata"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/layRenglon9"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textTratamiento"
+            android:layout_marginTop="20.0dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/layColumna91"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textPlantaAguaPotable"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/planta_agua_potable"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layPlantaAguaPotable"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <Spinner
+                        android:id="@+id/spinnerPlantaAguaPotable_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_selector" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna92"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textAlmaAguaTrata"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/alma_agua_trata"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layAlmaAguaTrata"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <Spinner
+                        android:id="@+id/spinnerAlmaAguaTrata_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_selector" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textRedDist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layRenglon9"
+            android:layout_marginTop="20.0dp"
+            android:paddingLeft="10dip"
+            android:text="@string/red_dist"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/layRenglon10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textRedDist"
+            android:layout_marginTop="20.0dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip" >
+
+            <LinearLayout
+                android:id="@+id/layColumna101"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textTipoTube"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tipo_tube"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layTipoTube"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <RadioGroup
+                        android:id="@+id/radioTipoTube_hidraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radioPrimarias_hydraulic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/primaria" />
+
+                        <RadioButton
+                            android:id="@+id/radioSecundarias_hydraulic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/secundaria" />
+
+                        <RadioButton
+                            android:id="@+id/radioTerciarias_hydraulic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/terciarias" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna102"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textCanalesCons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/canales_cont"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layCanalesCons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <Spinner
+                        android:id="@+id/spinnerCanalesCons_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_selector" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layRenglon11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layRenglon10"
+            android:layout_marginTop="20.0dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip" >
+
+            <LinearLayout
+                android:id="@+id/layColumna111"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textCruces"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cruces"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layCruces"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <RadioGroup
+                        android:id="@+id/radioCruces_hidraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <RadioButton
+                            android:id="@+id/radioCanalRiegoCon_hydraulic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/canal_riego_con" />
+
+                        <RadioButton
+                            android:id="@+id/radioCanalRiegoO_hydraulic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/canal_riego_o" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna112"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textRepresas"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/represas"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layRepresas"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <Spinner
+                        android:id="@+id/spinnerRepresas_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_selector" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layRenglon12"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layRenglon11"
+            android:layout_marginTop="20.0dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/layColumna121"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textEstaBombeo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/esta_bombeo"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layEstaBombeo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <Spinner
+                        android:id="@+id/spinnerEstaBombeo_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_selector" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna122"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textEsclusas"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/esclusas"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layEsclusas"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <Spinner
+                        android:id="@+id/spinnerEsclusas_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_selector" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textSistemasRiego"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layRenglon12"
+            android:layout_marginTop="20.0dp"
+            android:paddingLeft="10dip"
+            android:text="@string/sistemas_riego"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/layRenglon13"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textSistemasRiego"
+            android:layout_marginTop="20.0dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/layColumna131"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textCompHidra"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/comp_hidra"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layCompHidra"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <Spinner
+                        android:id="@+id/spinnerCompHidra_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_selector" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna132"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textCompNoHidra"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/comp_no_hidr"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layCompNoHidra"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <Spinner
+                        android:id="@+id/spinnerCompNoHidra_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_selector" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textAlcantarillado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layRenglon13"
+            android:layout_marginTop="20.0dp"
+            android:paddingLeft="10dip"
+            android:text="@string/alcantarillado"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/layRenglon14"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textAlcantarillado"
+            android:layout_marginTop="20.0dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip" >
+
+            <LinearLayout
+                android:id="@+id/layColumna141"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textAlcantarillas"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/alca"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layAlcantarillas"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editAlca_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/int_alca"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna142"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textColectores"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/colectores"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layColectores"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editColectores_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/int_colec"
+                        android:inputType="numberDecimal"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna143"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textInterceptores"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/interceptores"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layInterceptores"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editInterceptores_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/int_inter"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumn144"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textEstaDepu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/esta_depu"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layEstaDepu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editEstaDepu_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/int_esta_depu"
+                        android:inputType="numberDecimal"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layRenglon15"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layRenglon14"
+            android:layout_marginTop="20.0dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip" >
+
+            <LinearLayout
+                android:id="@+id/layColumna151"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textCuneRigo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cune_rigo"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layCuneRigo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editCuneRigo_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/int_cune_rigo"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna152"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textTraga"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/traga"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layTraga"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editTraga_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/int_traga"
+                        android:inputType="numberDecimal"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna153"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textVerte"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/vertedoras"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layVerte"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editVerte_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/int_vertedoras"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna154"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textPozosInspe"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/pozos_inspe"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layPozosInspe"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editPozosInspe_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/int_pozos"
+                        android:inputType="numberDecimal"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layRenglon16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layRenglon15"
+            android:layout_marginTop="20.0dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip" >
+
+            <LinearLayout
+                android:id="@+id/layColumna161"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textEstaBombeoAlcanta"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/esta_bombeo"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layEstaBombeoAlcanta"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editEstaBombeo_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/int_esta_bom"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna162"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textLinImpul"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/line_impul"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layLinimpul"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editLinImpul_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/int_line_impul"
+                        android:inputType="numberDecimal"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna163"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textDepTan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/depo_tan"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layDepTan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editDepTan_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/int_dep_tan"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layRenglon17"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layRenglon16"
+            android:layout_marginTop="20.0dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip" >
+
+            <LinearLayout
+                android:id="@+id/layColumna171"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textRed"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/red"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layRed"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <RadioGroup
+                        android:id="@+id/radioRed_hidraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radioUni_hydraulic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/uni" />
+
+                        <RadioButton
+                            android:id="@+id/radioSepa_hydraulic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sepa" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna172"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textAcometidas"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/acometidas"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layAcometidas"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <RadioGroup
+                        android:id="@+id/radioAcometidas_hidraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radioEntro_hydraulic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/entro" />
+
+                        <RadioButton
+                            android:id="@+id/radioArqueArra_hydraulic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/arque_arra" />
+
+                        <RadioButton
+                            android:id="@+id/radioAlba_hydraulic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/alba" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textDefeRibe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layRenglon17"
+            android:layout_marginTop="20.0dp"
+            android:paddingLeft="10dip"
+            android:text="@string/def_ribe"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/layRenglon18"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textDefeRibe"
+            android:layout_marginTop="20.0dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/layColumna181"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textMedEstru"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/med_estru"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layMedEstru"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <Spinner
+                        android:id="@+id/spinnerMedEstru_hydraulic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_selector" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layColumna182"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textSiniestralidad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layRenglon18"
+            android:layout_marginTop="20.0dp"
+            android:paddingLeft="10dip"
+            android:text="@string/siniestralidad"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/Sini1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textSiniestralidad"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <LinearLayout
+                android:id="@+id/Sini11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textImporte2013"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2013"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layImporte2013"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editImporte2013_hydraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp" />
+
+                    <Switch
+                        android:id="@+id/switchImporte2013_hydraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN" />
+
+                    <LinearLayout
+                        android:id="@+id/layDef2013"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp" >
+
+                        <EditText
+                            android:id="@+id/editDef2013_hydraulic"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini1"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <LinearLayout
+                android:id="@+id/Sini21"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textImporte2012"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2012"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layImporte2012"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editImporte2012_hydraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp" />
+
+                    <Switch
+                        android:id="@+id/switchImporte2012_hydraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN" />
+
+                    <LinearLayout
+                        android:id="@+id/layDef2012"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp" >
+
+                        <EditText
+                            android:id="@+id/editDef2012_hydraulic"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini2"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <LinearLayout
+                android:id="@+id/Sini31"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textImporte2011"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2011"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layImporte2011"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editImporte2011_hydraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp" />
+
+                    <Switch
+                        android:id="@+id/switchImporte2011_hydraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN" />
+
+                    <LinearLayout
+                        android:id="@+id/layDef2011"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp" >
+
+                        <EditText
+                            android:id="@+id/editDef2011_hydraulic"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini3"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <LinearLayout
+                android:id="@+id/Sini41"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textImporte2010"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2010"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layImporte2010"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editImporte2010_hydraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp" />
+
+                    <Switch
+                        android:id="@+id/switchImporte2010_hydraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN" />
+
+                    <LinearLayout
+                        android:id="@+id/layDef2010"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp" >
+
+                        <EditText
+                            android:id="@+id/editDef2010_hydraulic"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini4"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <LinearLayout
+                android:id="@+id/Sini51"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textImporte2009"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2009"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layImporte2009"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editImporte2009_hydraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp" />
+
+                    <Switch
+                        android:id="@+id/switchImporte2009_hydraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN" />
+
+                    <LinearLayout
+                        android:id="@+id/layDef2009"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp" >
+
+                        <EditText
+                            android:id="@+id/editDef2009_hydraulic"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini5"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <LinearLayout
+                android:id="@+id/Sini61"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textImporte2008"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2008"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layImporte2008"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editImporte2008_hydraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp" />
+
+                    <Switch
+                        android:id="@+id/switchImporte2008_hydraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN" />
+
+                    <LinearLayout
+                        android:id="@+id/layDef2008"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp" >
+
+                        <EditText
+                            android:id="@+id/editDef2008_hydraulic"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini6"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <LinearLayout
+                android:id="@+id/Sini71"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textImporte2007"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2007"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layImporte2007"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editImporte2007_hydraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp" />
+
+                    <Switch
+                        android:id="@+id/switchImporte2007_hydraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN" />
+
+                    <LinearLayout
+                        android:id="@+id/layDef2007"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp" >
+
+                        <EditText
+                            android:id="@+id/editDef2007_hydraulic"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini7"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <LinearLayout
+                android:id="@+id/Sini81"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textImporte2006"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2006"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layImporte2006"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editImporte2006_hydraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp" />
+
+                    <Switch
+                        android:id="@+id/switchImporte2006_hydraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN" />
+
+                    <LinearLayout
+                        android:id="@+id/layDef2006"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp" >
+
+                        <EditText
+                            android:id="@+id/editDef2006_hydraulic"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini9"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini8"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <LinearLayout
+                android:id="@+id/Sini91"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textImporte2005"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2005"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layImporte2005"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editImporte2005_hydraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp" />
+
+                    <Switch
+                        android:id="@+id/switchImporte2005_hydraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN" />
+
+                    <LinearLayout
+                        android:id="@+id/layDef2005"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp" >
+
+                        <EditText
+                            android:id="@+id/editDef2005_hydraulic"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Sini10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sini9"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <LinearLayout
+                android:id="@+id/Sini101"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/textImporte2004"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/imp_2004"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layImporte2004"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editImporte2004_hydraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/int_importe"
+                        android:textSize="20sp" />
+
+                    <Switch
+                        android:id="@+id/switchImporte2004_hydraulic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dip"
+                        android:layout_marginTop="20.0dp"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:textOff="USD"
+                        android:textOn="MXN" />
+
+                    <LinearLayout
+                        android:id="@+id/layDef2004"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp" >
+
+                        <EditText
+                            android:id="@+id/editDef2004_hydraulic"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/int_def"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/BotonesFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/Sini10"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp" >
+
+            <ImageButton
+                android:id="@+id/buttonSaveBot1_2_hydraulic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:background="@mipmap/guardar" />
+
+            <ImageButton
+                android:id="@+id/buttonOutBot1_2_hydraulic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:background="@mipmap/salir" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

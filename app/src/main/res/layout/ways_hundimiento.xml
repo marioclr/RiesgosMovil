@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/PropertyImage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/login_header" />
+
+    <LinearLayout
+        android:id="@+id/TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp" >
+
+        <TextView
+	        android:id="@+id/ListaHundimiento"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/lista_hundimiento"
+	        android:layout_marginLeft="10dp"
+	        android:textSize="30sp"
+	        android:textStyle="italic" />
+	
+	    <ImageButton
+	        android:id="@+id/buttonAgregarHundimiento_ways"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+	        android:background="@mipmap/agregar" />
+
+    </LinearLayout>
+
+    <LinearLayout 
+        android:background="@android:color/darker_gray"
+		        android:layout_width="fill_parent"
+		        android:layout_height="50dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:gravity="center"
+		        android:orientation="horizontal" >
+	    <TextView 
+            android:id="@+id/textUbicacionHundimiento"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="@string/ubicacion"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <TextView 
+            android:id="@+id/textGravedadHundimiento"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="@string/grav_hun"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+        
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listHundimiento_ways"
+        android:layout_width="fill_parent"
+        android:layout_height="51dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.16"
+        android:background="@android:color/background_light"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/background_dark"
+        android:dividerHeight="2dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="5dp"
+        android:scrollbarStyle="outsideOverlay" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/BotonesFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="870dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp" >
+
+        <ImageButton
+            android:id="@+id/buttonSaveBotHundimiento_ways"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:background="@mipmap/guardar" />
+
+        <ImageButton
+            android:id="@+id/buttonOutBotHundimiento_ways"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:background="@mipmap/salir" />
+    </LinearLayout>
+
+</LinearLayout>

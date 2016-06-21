@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/background">
+    <RelativeLayout
+        android:id="@+id/ScrollLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp" >
+        <TextView
+            android:id="@+id/Contenido2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="33dp"
+            android:layout_marginTop="11dp"
+            android:text="@string/cont_2_2"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+        
+        <TextView
+           android:id="@+id/Valores"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/Contenido2_2"
+           android:textSize="30sp"
+           android:paddingLeft="10dip"
+           android:text="@string/valores"
+           android:textStyle="italic"/>
+			<LinearLayout
+			    android:id="@+id/layRenglon5"
+			    android:paddingLeft="10dip"
+			    android:paddingRight="10dip"
+			    android:orientation="horizontal"
+			    android:layout_below="@+id/Valores"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content">
+
+			    <LinearLayout
+			        android:id="@+id/layColumna51"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+			        android:orientation="vertical" >
+
+              				<TextView
+              				    android:id="@+id/textValPromedio"
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:textSize="20sp"
+                    			android:text="@string/val_promedio"
+                    			android:layout_marginTop="23.8dp"
+                    			android:textStyle="italic"/>
+              				<LinearLayout 
+                		android:id="@+id/ValPromedio" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+              				<EditText
+                    			android:layout_width="wrap_content"
+                    			android:layout_height="wrap_content"
+                    			android:id="@+id/editValPromedio_urban"
+                    			android:textSize="20sp"
+                    			android:hint="@string/int_val" />
+			   
+              				<Switch
+              				    android:id="@+id/switchValPromedio_urban"
+              		    		android:layout_width="wrap_content"
+              		    		android:layout_height="wrap_content"
+              		    		android:checked="true"
+              		    		android:enabled="false"
+              		    		android:textOn="MXN"
+              		    		android:textOff="USD"
+              		    		android:layout_marginBottom="32dip" />
+              				</LinearLayout>
+    			</LinearLayout>			    
+			</LinearLayout>
+			<LinearLayout
+			    android:id="@+id/layRenglon6"
+			    android:paddingLeft="10dip"
+			    android:paddingRight="10dip"
+			    android:orientation="horizontal"
+			    android:layout_below="@+id/layRenglon5"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content">
+
+			    <LinearLayout
+			        android:id="@+id/layColumna61"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+			        android:orientation="vertical" >
+
+              				<TextView
+              				    android:id="@+id/textValUni"
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:textSize="20sp"
+                    			android:text="@string/val_uni"
+                    			android:layout_marginTop="23.8dp"
+                    			android:textStyle="italic"/>
+              				<LinearLayout 
+                		android:id="@+id/layValUni" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+              				<EditText
+                    			android:layout_width="wrap_content"
+                    			android:layout_height="wrap_content"
+                    			android:id="@+id/editValUni_urban"
+                    			android:textSize="20sp"
+                    			android:hint="@string/int_val" />
+			   
+              				<Switch
+              				    android:id="@+id/switchValUni_urban"
+              		    		android:layout_width="wrap_content"
+              		    		android:layout_height="wrap_content"
+              		    		android:checked="true"
+              		    		android:enabled="false"
+              		    		android:textOn="MXN"
+              		    		android:textOff="USD"
+              		    		android:layout_marginBottom="32dip" />
+              				</LinearLayout>
+    			</LinearLayout>			    
+			</LinearLayout>
+			<LinearLayout
+			    android:id="@+id/layRenglon7"
+			    android:paddingLeft="10dip"
+			    android:paddingRight="10dip"
+			    android:orientation="horizontal"
+			    android:layout_below="@+id/layRenglon6"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content">
+
+			    <LinearLayout
+			        android:id="@+id/layColumna71"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+			        android:orientation="vertical" >
+
+              				<TextView
+              				    android:id="@+id/textValPromRep"
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:textSize="20sp"
+                    			android:text="@string/val_prom_rep"
+                    			android:layout_marginTop="23.8dp"
+                    			android:textStyle="italic"/>
+              				<LinearLayout 
+                		android:id="@+id/layValPromRep" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+              				<EditText
+                    			android:layout_width="wrap_content"
+                    			android:layout_height="wrap_content"
+                    			android:id="@+id/editValPromRep_urban"
+                    			android:textSize="20sp"
+                    			android:hint="@string/int_val" />
+			   
+              				<Switch
+              				    android:id="@+id/switchValPromRep_urban"
+              		    		android:layout_width="wrap_content"
+              		    		android:layout_height="wrap_content"
+              		    		android:checked="true"
+              		    		android:enabled="false"
+              		    		android:textOn="MXN"
+              		    		android:textOff="USD"
+              		    		android:layout_marginBottom="32dip" />
+              				</LinearLayout>
+    			</LinearLayout>			    
+			</LinearLayout>
+			<LinearLayout
+			    android:id="@+id/layRenglon8"
+			    android:paddingLeft="10dip"
+			    android:paddingRight="10dip"
+			    android:orientation="horizontal"
+			    android:layout_below="@+id/layRenglon7"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content">
+
+			    <LinearLayout
+			        android:id="@+id/layColumna81"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+			        android:orientation="vertical" >
+
+              				<TextView
+              				    android:id="@+id/textMontoPre"
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:textSize="20sp"
+                    			android:text="@string/monto_pre"
+                    			android:layout_marginTop="23.8dp"
+                    			android:textStyle="italic"/>
+              				<LinearLayout 
+                		android:id="@+id/layMontoPre" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+              				<EditText
+                    			android:layout_width="wrap_content"
+                    			android:layout_height="wrap_content"
+                    			android:id="@+id/editMontoPre_urban"
+                    			android:textSize="20sp"
+                    			android:hint="@string/int_monto" />
+			   
+              				<Switch
+              				    android:id="@+id/switchMontoPre_urban"
+              		    		android:layout_width="wrap_content"
+              		    		android:layout_height="wrap_content"
+              		    		android:checked="true"
+              		    		android:enabled="false"
+              		    		android:textOn="MXN"
+              		    		android:textOff="USD"
+              		    		android:layout_marginBottom="32dip" />
+              				</LinearLayout>
+    			</LinearLayout>			    
+			</LinearLayout>
+			<LinearLayout
+			    android:id="@+id/layRenglon9"
+			    android:paddingLeft="10dip"
+			    android:paddingRight="10dip"
+			    android:orientation="horizontal"
+			    android:layout_below="@+id/layRenglon8"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content">
+
+			    <LinearLayout
+			        android:id="@+id/layColumna91"
+			        android:layout_width="wrap_content"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+			        android:orientation="vertical" >
+
+              				<TextView
+              				    android:id="@+id/textMontoCorre"
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="wrap_content"
+                    			android:textSize="20sp"
+                    			android:text="@string/monto_corre"
+                    			android:layout_marginTop="23.8dp"
+                    			android:textStyle="italic"/>
+              				<LinearLayout 
+                		android:id="@+id/layMontoCorre" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+              				<EditText
+                    			android:layout_width="wrap_content"
+                    			android:layout_height="wrap_content"
+                    			android:id="@+id/editMontoCorre_urban"
+                    			android:textSize="20sp"
+                    			android:hint="@string/int_monto" />
+			   
+              				<Switch
+              				    android:id="@+id/switchMontoCorre_urban"
+              		    		android:layout_width="wrap_content"
+              		    		android:layout_height="wrap_content"
+              		    		android:checked="true"
+              		    		android:enabled="false"
+              		    		android:textOn="MXN"
+              		    		android:textOff="USD"
+              		    		android:layout_marginBottom="32dip" />
+              				</LinearLayout>
+    			</LinearLayout>			    
+			</LinearLayout>
+			<LinearLayout 
+    	    android:id="@+id/BotonesFinal" 
+    	    android:layout_width="wrap_content" 
+    	    android:layout_height="wrap_content" 
+    	    android:layout_alignParentRight="true"
+    	    android:layout_marginTop="20dp"
+    	    android:paddingBottom="10dp"
+    	    android:layout_below="@+id/layRenglon9" 
+    	    android:orientation="horizontal">
+			     <ImageButton 
+        	    android:id="@+id/buttonSaveBot2_2_urban" 
+        	    android:layout_width="wrap_content" 
+        	    android:layout_height="wrap_content" 
+        	    android:layout_marginRight="30dp" 
+        	    android:background="@mipmap/guardar" />
+        	<ImageButton 
+        	    android:id="@+id/buttonOutBot2_2_urban" 
+        	    android:layout_width="wrap_content" 
+        	    android:layout_height="wrap_content" 
+        	    android:layout_marginRight="50dp" 
+        	    android:background="@mipmap/salir" />
+        	
+    	</LinearLayout>
+	</RelativeLayout>
+</ScrollView>

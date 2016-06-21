@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/background">
+    <RelativeLayout
+        android:id="@+id/ScrollLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:paddingRight="10dp">
+        <TextView
+            android:id="@+id/Contenido2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="33dp"
+            android:layout_marginTop="11dp"
+            android:text="@string/cont_2_2"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+        <TextView
+           android:id="@+id/textValores"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/Contenido2_2"
+           android:textSize="30sp"
+           android:paddingLeft="10dip"
+           android:text="@string/valores"
+           android:textStyle="italic"/>
+        <LinearLayout
+        	    android:id="@+id/layRenglon3"
+            	android:orientation="horizontal"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/textValores"
+            	android:layout_marginTop="20.0dp">
+        		<LinearLayout 
+              		android:id="@+id/layColumna31" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textValRepNue" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/val_rep_nuev" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layValRepNue" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+
+              		<EditText
+              		    android:id="@+id/editValRepNue_waste_disposal"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_monto"
+              		    android:textSize="20sp" />
+
+              		<Switch
+              		    android:id="@+id/switchValRepNue_waste_disposal"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:checked="true"
+              		    android:enabled="false"
+              		    android:layout_marginTop="20.0dp"
+              		    android:textOn="MXN"
+              		    android:textOff="USD"
+              		    android:layout_marginBottom="32dip" />
+            		</LinearLayout>
+          		</LinearLayout>	
+          		<LinearLayout 
+              		android:id="@+id/layColumna32" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textValObrasCiv" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/val_obra_civil" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layValObraCiv" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+
+              		<EditText
+              		    android:id="@+id/editValObraCiv_waste_disposal"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_val"
+              		    android:textSize="20sp" />
+
+              		<Switch
+              		    android:id="@+id/switchValObraCiv_waste_disposal"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:checked="true"
+              		    android:enabled="false"
+              		    android:layout_marginTop="20.0dp"
+              		    android:textOn="MXN"
+              		    android:textOff="USD"
+              		    android:layout_marginBottom="32dip" />
+            		</LinearLayout>
+          		</LinearLayout>	
+          	</LinearLayout>
+          	<LinearLayout
+        	    android:id="@+id/layRenglon4"
+            	android:orientation="horizontal"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_below="@id/layRenglon3"
+            	android:layout_marginTop="20.0dp">
+        		<LinearLayout 
+              		android:id="@+id/layColumna41" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textValMaqEqu" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/val_maq_equ" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layValMaqEqu" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+
+              		<EditText
+              		    android:id="@+id/editValMaqEqu_waste_disposal"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_val"
+              		    android:textSize="20sp" />
+
+              		<Switch
+              		    android:id="@+id/switchValMaqEqu_waste_disposal"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:checked="true"
+              		    android:enabled="false"
+              		    android:layout_marginTop="20.0dp"
+              		    android:textOn="MXN"
+              		    android:textOff="USD"
+              		    android:layout_marginBottom="32dip" />
+            		</LinearLayout>
+          		</LinearLayout>	
+          		<LinearLayout 
+              		android:id="@+id/layColumna42" 
+              		android:orientation="vertical" 
+              		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+              		android:paddingLeft="10dip" 
+              		android:layout_weight="1" 
+              		android:layout_marginTop="20.0dp">
+            		<TextView 
+                		android:id="@+id/textMontoDestMant" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:textSize="20sp" 
+                		android:text="@string/monto_dest_mant" 
+                		android:textStyle="italic" 
+                		android:layout_weight="1" />
+            		<LinearLayout 
+                		android:id="@+id/layMontoDestMant" 
+                		android:orientation="horizontal" 
+                		android:layout_width="fill_parent" 
+                		android:layout_height="wrap_content" 
+                		android:layout_weight="1">
+
+              		<EditText
+              		    android:id="@+id/editMontoDestMant_waste_disposal"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:hint="@string/int_monto"
+              		    android:textSize="20sp" />
+
+              		<Switch
+              		    android:id="@+id/switchMontoDestMant_waste_disposal"
+              		    android:layout_width="wrap_content"
+              		    android:layout_height="wrap_content"
+              		    android:checked="true"
+              		    android:enabled="false"
+              		    android:layout_marginTop="20.0dp"
+              		    android:textOn="MXN"
+              		    android:textOff="USD"
+              		    android:layout_marginBottom="32dip" />
+            		</LinearLayout>
+          		</LinearLayout>	
+          	</LinearLayout>
+			<LinearLayout 
+    	    android:id="@+id/BotonesFinal" 
+    	    android:layout_width="wrap_content" 
+    	    android:layout_height="wrap_content" 
+    	    android:layout_alignParentRight="true"
+    	    android:layout_marginTop="20dp"
+    	    android:paddingBottom="10dp"
+    	    android:layout_below="@+id/layRenglon4" 
+    	    android:orientation="horizontal">
+			     <ImageButton 
+        	    android:id="@+id/buttonSaveBot2_2_waste_disposal" 
+        	    android:layout_width="wrap_content" 
+        	    android:layout_height="wrap_content" 
+        	    android:layout_marginRight="30dp" 
+        	    android:background="@mipmap/guardar" />
+        	<ImageButton 
+        	    android:id="@+id/buttonOutBot2_2_waste_disposal" 
+        	    android:layout_width="wrap_content" 
+        	    android:layout_height="wrap_content" 
+        	    android:layout_marginRight="50dp" 
+        	    android:background="@mipmap/salir" />
+        	
+    	</LinearLayout>
+	</RelativeLayout>
+</ScrollView>

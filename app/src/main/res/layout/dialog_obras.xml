@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    android:orientation="vertical" >
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#d3d3d3"
+	    android:orientation="vertical" >
+
+		<LinearLayout
+	        android:id="@+id/layRenglon1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textNombreObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/nombre_refer"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <EditText
+	                android:id="@+id/editTextoNombreObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:ems="10"
+	                android:hint="@string/int_nombre_refer"
+	                android:inputType="textPersonName" >
+	                <requestFocus />
+	            </EditText>
+	
+	    </LinearLayout>
+	    <LinearLayout
+	        android:id="@+id/layRenglon2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon1"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	
+	            <TextView
+	                android:id="@+id/textTipoObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/tipos_obras"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <Spinner
+	                android:id="@+id/spinnerTipoObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:background="@drawable/spinner_selector" />
+	
+	    </LinearLayout>
+	    <LinearLayout
+	        android:id="@+id/layRenglonA"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon2"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	
+	            <TextView
+	                android:id="@+id/textCapacidadObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/capacidad"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <EditText
+	                android:id="@+id/editTextoCapacidadObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:ems="10"
+	                android:hint="@string/int_capacidad">
+	            </EditText>
+	
+	    </LinearLayout>
+	    <LinearLayout
+	        android:id="@+id/layRenglon3"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglonA"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	
+	            <TextView
+	                android:id="@+id/textElevacionObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/ele_hm3"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <EditText
+	                android:id="@+id/editTextoElevacionObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:ems="10"
+	                android:hint="@string/int_ele_hm3">
+	            </EditText>
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon4"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon3"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	
+	            <TextView
+	                android:id="@+id/textNumeroCompObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/num_comp"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <EditText
+	                android:id="@+id/editTextoNumeroCompObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:ems="10"
+	                android:hint="@string/int_numero">
+	            </EditText>
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon5"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon4"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	
+	            <TextView
+	                android:id="@+id/textTipoComObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/tipo_comp"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <Spinner
+	                android:id="@+id/spinnerTipoComObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:background="@drawable/spinner_selector" />
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon6"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon5"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textAnchoComObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/anc_comp"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editTextoAnchoComObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="@string/int_ancho">
+		        </EditText>
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon7"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon6"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textAltoComObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/alt_comp"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editTextoAltoComObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="@string/int_altura"
+		            android:inputType="textPersonName" >
+		        </EditText>
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon8"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon7"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	
+	            <TextView
+	                android:id="@+id/textNumValObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/num_val"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editTextoNumValObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="@string/int_numero"
+		            android:inputType="textPersonName" >
+		        </EditText>
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon9"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon8"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textTipoValObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/tipo_val"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		       <Spinner
+	                android:id="@+id/spinnerTipoVal"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:background="@drawable/spinner_selector" />
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon10"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon9"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textNumConObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/num_cond"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editTextoNumConObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="@string/int_numero"
+		            android:inputType="textPersonName" >
+		        </EditText>
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon11"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon10"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textTipoCondObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/tipo_cond"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <Spinner
+	                android:id="@+id/spinnerTipoCondObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:background="@drawable/spinner_selector" />
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon12"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon11"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textDimCondObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/dimen_cond"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editTextoDimCondObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="@string/int_dimen_cond"
+		            android:inputType="textPersonName" >
+		        </EditText>
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon14"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon13"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textComentariosObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/comentarios"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editTextoComentariosObras"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="@string/int_comentarios">
+		        </EditText>
+	
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:id="@+id/layRenglon13"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/layRenglon12"
+	        android:layout_marginTop="25dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+
+	        <TextView
+	            android:id="@+id/textCuentaRejillasObras"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:text="@string/cuenta_rejillas"
+	            android:textSize="20sp"
+	            android:textStyle="italic" />
+
+	        <Switch
+	            android:id="@+id/switchCuentaRejillasObras"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="32dip"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginTop="20.0dp"
+	            android:checked="false"
+	            android:textOff="NO"
+	            android:textOn="SÍ" />
+	    </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

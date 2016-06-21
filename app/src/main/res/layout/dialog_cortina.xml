@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    android:orientation="vertical" >
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#d3d3d3"
+	    android:orientation="vertical" >
+
+		<LinearLayout
+	        android:id="@+id/layRenglon1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textIdentificadorCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/identificador_cortina"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <EditText
+	                android:id="@+id/editTextoIdentificadorCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:ems="10"
+	                android:hint="Ingrese el identificador de la Cortina"
+	                android:inputType="textPersonName" >
+	                <requestFocus />
+	            </EditText>
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon1"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	
+	            <TextView
+	                android:id="@+id/textTamañoCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/tamaño_cortina"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <Spinner
+	                android:id="@+id/spinnerTamañoCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:background="@drawable/spinner_selector" />
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon3"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon2"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	
+	            <TextView
+	                android:id="@+id/textComportamientoCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/comportamiento_cortina"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <Spinner
+	                android:id="@+id/spinnerComportamientoCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:background="@drawable/spinner_selector" />
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon4"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon3"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	
+	            <TextView
+	                android:id="@+id/textTipoCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/tipo_cortina"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <Spinner
+	                android:id="@+id/spinnerTipoCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:background="@drawable/spinner_selector" />
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon5"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon4"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	
+	            <TextView
+	                android:id="@+id/textMaterialCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/material_cortina"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <Spinner
+	                android:id="@+id/spinnerMaterialCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:background="@drawable/spinner_selector" />
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon6"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon5"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textAlturaMaximaCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/altura_maxima_cortina"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editTextoAlturaMaximaCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="Ingrese la Altura Máxima de la Cortina"
+		            android:inputType="textPersonName" >
+		        </EditText>
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon7"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon6"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textElevacionCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/elevacion_cortina"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editTextoElevacionCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="Ingrese la Elevación de la Cortina"
+		            android:inputType="textPersonName" >
+		        </EditText>
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon8"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon7"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	
+	            <TextView
+	                android:id="@+id/textLongitudCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/longitud_cortina"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editTextoLongitudCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="Ingrese la Longitud de la Cortina"
+		            android:inputType="textPersonName" >
+		        </EditText>
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon9"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon8"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textAnchoCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/ancho_cortina"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editTextoAnchoCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="Ingrese el Ancho de la Cortina"
+		            android:inputType="textPersonName" >
+		        </EditText>
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon10"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon9"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textTaludesAguasArribaCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/taludes_aguas_arriba_cortina"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editTextoTaludesAguasArribaCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="Ingrese el Taludes Aguas Arriba de la Cortina"
+		            android:inputType="textPersonName" >
+		        </EditText>
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon11"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon10"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textTaludesAguasAbajoCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/taludes_aguas_abajo_cortina"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editTextoTaludesAguasAbajoCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="Ingrese el Taludes Aguas Abajo de la Cortina"
+		            android:inputType="textPersonName" >
+		        </EditText>
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon12"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon11"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textAlturaParapetoCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/altura_parapeto_cortina"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editTextoAlturaParapetoCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="Ingrese el Altura del Parapeto de la Cortina"
+		            android:inputType="textPersonName" >
+		        </EditText>
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon13"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon12"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textVolumenCuerpoCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/volumen_cuerpo_cortina"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editTextoVolumenCuerpoCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="Ingrese el Volumen del Cuerpo de la Cortina"
+		            android:inputType="textPersonName" >
+		        </EditText>
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon14"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon13"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textAlturaSobreCalceCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/altura_sobre_calce_cortina"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editTextoAlturaSobreCalceCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="Ingrese la Altura Sobre el Calce de la Cortina"
+		            android:inputType="textPersonName" >
+		        </EditText>
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon15"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon14"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textOtrasCaracteristicasCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/otras_caracteristicas_cortina"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editTextoOtrasCaracteristicasCortina"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="Ingrese Otras Caracteristicas de la Cortina"
+		            android:inputType="textPersonName" >
+		        </EditText>
+	
+	    </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

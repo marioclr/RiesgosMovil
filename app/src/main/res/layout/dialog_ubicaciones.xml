@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    android:orientation="vertical" >
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#d3d3d3"
+	    android:orientation="vertical" >
+	    <LinearLayout
+	        android:id="@+id/layRenglonA"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textNombreUbicaciones"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/nombre_refer"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editNombreUbicaciones"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="@string/int_nombre_refer"
+		            android:inputType="textPersonName" >
+		        </EditText>
+	
+	    </LinearLayout>
+
+		<LinearLayout
+	        android:id="@+id/layRenglon1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10.0dp"
+	        android:orientation="horizontal"
+	        android:layout_below="@+id/layRenglonA"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	        <ImageButton
+    		    android:id="@+id/buttonUbicacionUbicaciones"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_marginLeft="100dp"
+    		    android:layout_marginTop="23.8dp"
+    		    android:background="@mipmap/ubicacion" />
+	    </LinearLayout>
+	    <LinearLayout
+    	    android:id="@+id/layUbicacion"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layRenglon1"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_weight="3">
+                <LinearLayout
+                    android:id="@+id/Longitud"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+                    	<TextView
+                    		android:id="@+id/LongitudText"
+                    		android:layout_width="wrap_content"
+                    		android:layout_height="wrap_content"
+                    		android:textSize="20sp"
+                    		android:text="@string/longitud"
+                    		android:layout_marginTop="23.8dp"
+                    		android:textStyle="italic"/>
+                    	<EditText
+                    		android:layout_width="fill_parent"
+                    		android:layout_height="wrap_content"
+                    		android:id="@+id/editLongitudUbicaciones"
+                    		android:layout_weight="1"
+                    		android:textSize="20sp"
+                    		android:hint="@string/int_lon" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/Latitud"
+                    	android:orientation="vertical"
+                    	android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content"
+                    	android:layout_weight="2">
+                    	<TextView
+                    		android:id="@+id/LatitudText"
+                    		android:layout_width="wrap_content"
+                    		android:layout_height="wrap_content"
+                    		android:textSize="20sp"
+                    		android:text="@string/latitud"
+                    		android:layout_marginTop="23.8dp"
+                    		android:textStyle="italic"/>
+                    	<EditText
+                    		android:layout_width="fill_parent"
+                    		android:layout_height="wrap_content"
+                    		android:id="@+id/editLatitudUbicaciones"
+                    		android:layout_weight="1"
+                    		android:textSize="20sp"
+                    		android:hint="@string/int_lat" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/Altitud"
+                    	android:orientation="vertical"
+                    	android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content"
+                    	android:layout_weight="2">
+                    	<TextView
+                    		android:id="@+id/AltitudText"
+                    		android:layout_width="fill_parent"
+                    		android:layout_height="wrap_content"
+                    		android:textSize="20sp"
+                    		android:text="@string/altitud"
+                    		android:layout_marginTop="23.8dp"
+                    		android:textStyle="italic"/>
+                    	<EditText
+                    		android:layout_width="fill_parent"
+                    		android:layout_height="wrap_content"
+                    		android:id="@+id/editAltitudUbicaciones"
+                    		android:layout_weight="1"
+                    		android:textSize="20sp"
+                    		android:hint="@string/int_alt" />
+			</LinearLayout>
+    	</LinearLayout>
+	    <LinearLayout
+	        android:id="@+id/layRenglon2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layUbicacion"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	
+	            <TextView
+	                android:id="@+id/textCuencasUbicaciones"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/cuenca_hidra"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <Spinner
+	                android:id="@+id/spinnerCuencasUbicaciones"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:background="@drawable/spinner_selector" />
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon3"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon2"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	
+	            <TextView
+	                android:id="@+id/textEstacionesUbicaciones"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/esta_mete"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <Spinner
+	                android:id="@+id/spinnertEstacionesUbicaciones"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:background="@drawable/spinner_selector" />
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon4"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon3"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	
+	            <TextView
+	                android:id="@+id/textTipoUbicaciones"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/tipo_presas"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <Spinner
+	                android:id="@+id/spinnerTipoUbicaciones"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:background="@drawable/spinner_selector" />
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon5"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon4"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	
+	            <TextView
+	                android:id="@+id/textUsoUbicaciones"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/uso_presas"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <Spinner
+	                android:id="@+id/spinnerUsoUbicaciones"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:background="@drawable/spinner_selector" />
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layRenglon6"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon5"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textDistanciUbicaciones"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/dist_pobla"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editDistanciaUbicaciones"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="@string/int_dist_pobla"
+		            android:inputType="textPersonName" >
+		        </EditText>
+	
+	    </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    android:orientation="vertical" >
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#d3d3d3"
+	    android:orientation="vertical" >
+
+		<LinearLayout
+	        android:id="@+id/layRenglon1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textNumeroVertedor"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/numero_vertedor"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <EditText
+	                android:id="@+id/editTextoNumeroVertedor"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:ems="10"
+	                android:hint="Ingrese el Numero de Vertedor"
+	                android:inputType="textPersonName" >
+	                <requestFocus />
+	            </EditText>
+	
+	    </LinearLayout>
+		<LinearLayout
+	        android:id="@+id/layRenglon2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon1"
+	        android:layout_marginTop="10.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textCapacidadAcumulada"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/capacidad_acumulada_vertedor"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <EditText
+	                android:id="@+id/editTextoCapacidadAcumulada"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:ems="10"
+	                android:hint="Ingrese la Capacidad Acumulada del Vertedero"
+	                android:inputType="textPersonName" >
+	                <requestFocus />
+	            </EditText>
+	
+	    </LinearLayout>
+	    <LinearLayout
+	        android:id="@+id/layRenglon3"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon2"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	
+	            <TextView
+	                android:id="@+id/textTipoVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/tipo_vertedor"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <Spinner
+	                android:id="@+id/spinnerTipoVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:background="@drawable/spinner_selector" />
+	
+	    </LinearLayout>
+
+		<LinearLayout
+	        android:id="@+id/layRenglon4"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon3"
+	        android:layout_marginTop="10.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textOperacionVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/operacion_vertedor"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <EditText
+	                android:id="@+id/editTextoOperacionVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:ems="10"
+	                android:hint="Ingrese la Operacion del Vertedero"
+	                android:inputType="textPersonName" >
+	                <requestFocus />
+	            </EditText>
+	
+	    </LinearLayout>
+
+		<LinearLayout
+	        android:id="@+id/layRenglon5"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon4"
+	        android:layout_marginTop="10.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textLongitudCrestaVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/longitud_cresta_vertedor"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <EditText
+	                android:id="@+id/editTextoLongitudCrestaVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:ems="10"
+	                android:hint="Ingrese la Longitud de Cresta del Vertedero"
+	                android:inputType="textPersonName" >
+	                <requestFocus />
+	            </EditText>
+	
+	    </LinearLayout>
+
+		<LinearLayout
+	        android:id="@+id/layRenglon6"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon5"
+	        android:layout_marginTop="10.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textElevacionCrestaVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/elevacion_cresta_vertedor"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <EditText
+	                android:id="@+id/editElevacionCrestaVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:ems="10"
+	                android:hint="Ingrese la Elevacion de Cresta del Vertedero"
+	                android:inputType="textPersonName" >
+	                <requestFocus />
+	            </EditText>
+	
+	    </LinearLayout>
+
+		<LinearLayout
+	        android:id="@+id/layRenglon7"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon6"
+	        android:layout_marginTop="10.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textNumeroCompuertasVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/numero_compuertas_vertedor"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <EditText
+	                android:id="@+id/editTextoNumeroCompuertasVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:ems="10"
+	                android:hint="Ingrese el Número Compuertas del Vertedero"
+	                android:inputType="textPersonName" >
+	                <requestFocus />
+	            </EditText>
+	
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:id="@+id/layRenglon8"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon7"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	
+	            <TextView
+	                android:id="@+id/textTipoCompuertasVertedor"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/tipo_compuertas_vertedor"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <Spinner
+	                android:id="@+id/spinnerTipoCompuertasVertedor"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:background="@drawable/spinner_selector" />
+	
+	    </LinearLayout>
+
+		<LinearLayout
+	        android:id="@+id/layRenglon9"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon8"
+	        android:layout_marginTop="10.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textAlturaCompuertasVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/altura_compuertas_vertedor"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+	            <EditText
+	                android:id="@+id/editTextoAlturaCompuertasVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:ems="10"
+	                android:hint="Ingrese la Altura de Compuertas del Vertedero"
+	                android:inputType="textPersonName" >
+	                <requestFocus />
+	            </EditText>
+
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:id="@+id/layRenglon10"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon9"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textAnchoCompuertasVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/ancho_compuertas_vertedor"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editTextoAnchoCompuertasVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="Ingrese el Ancho de Compuertas del Vertedero"
+		            android:inputType="textPersonName" >
+		        </EditText>
+	
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:id="@+id/layRenglon11"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon10"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textControlCompuertasVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/control_compuertas_vertedor"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editTextoControlCompuertasVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="Ingrese el Control de Compuertas del Vertedero"
+		            android:inputType="textPersonName" >
+		        </EditText>
+	
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:id="@+id/layRenglon12"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon11"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textGastoPicoVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/gasto_pico_vertedor"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editTextoGastoPicoVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="Ingrese el Gasto Pico del Vertedero"
+		            android:inputType="textPersonName" >
+		        </EditText>
+	
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:id="@+id/layRenglon13"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon12"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	            <TextView
+	                android:id="@+id/textElevacionLSCVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/elevación_LSC_vertedor"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editTextoElevacionLSCVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="Ingrese la Elevación LSC del Vertedero"
+		            android:inputType="textPersonName" >
+		        </EditText>
+	
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:id="@+id/layRenglon14"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon13"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+
+	            <TextView
+	                android:id="@+id/textEstructuraDisipadoraVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/estructura_disipadora_vertedor"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editTextoEstructuraDisipadoraVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="Ingrese la Estructura Disipadora del Vertedero"
+		            android:inputType="textPersonName" >
+		        </EditText>
+	
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:id="@+id/layRenglon15"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon14"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+
+	            <TextView
+	                android:id="@+id/textAgujasVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:gravity="center_vertical|left"
+	                android:text="@string/agujas_vertedor"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+<!-- 		        <EditText
+		            android:id="@+id/editTextoAgujasVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="Ingrese las Agujas del Vertedero"
+		            android:inputType="textPersonName" >
+		        </EditText> -->
+		        <Switch
+		            android:id="@+id/switchAgujasVertedero"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:gravity="center_vertical|left"
+		            android:layout_marginBottom="32dip"
+		            android:layout_marginLeft="50dp"
+		            android:layout_marginTop="20.0dp"
+		            android:checked="false"
+		            android:textOff="NO"
+		            android:textOn="SÍ" />
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:id="@+id/layRenglon16"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon15"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+
+	            <TextView
+	                android:id="@+id/textAlturaAgujasVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/altura_agujas_vertedor"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editTextoAlturaAgujasVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="Ingrese la Altura de Agujas del Vertedero"
+		            android:inputType="textPersonName" >
+		        </EditText>
+	
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:id="@+id/layRenglon17"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layRenglon16"
+	        android:layout_marginTop="20.0dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+
+	            <TextView
+	                android:id="@+id/textComentariosVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="2"
+	                android:text="@string/comentarios_vertedor"
+	                android:textSize="20sp"
+	                android:textStyle="italic" />
+	
+		        <EditText
+		            android:id="@+id/editTextoComentariosVertedero"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+		            android:ems="10"
+		            android:hint="Ingrese Comentarios acerca del Vertedero"
+		            android:inputType="textPersonName" >
+		        </EditText>
+	
+	    </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

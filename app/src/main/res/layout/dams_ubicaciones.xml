@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/PropertyImage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/login_header" />
+
+   <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ListaCortinas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/lista_ubicaciones"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+        
+        <ImageButton
+            android:id="@+id/buttonAgregarUbicaciones_dams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:background="@mipmap/agregar" />
+
+    </LinearLayout>
+
+   <HorizontalScrollView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:orientation="vertical" > 
+	
+		    <LinearLayout 
+		        android:background="@android:color/darker_gray"
+		        android:layout_width="fill_parent"
+		        android:layout_height="50dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:gravity="center"
+		        android:orientation="horizontal">
+		        <TextView 
+		            android:id="@+id/textNombreUbicaciones"
+		            android:gravity="center_horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/nombre_refer"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		        <TextView 
+		            android:id="@+id/textLongitudUbicaciones"
+		            android:gravity="center_horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/longitud"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		        <TextView 
+		            android:id="@+id/textLatitudUbicaciones"
+		            android:gravity="center_horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/latitud"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		        <TextView 
+		            android:id="@+id/textAltitudUbicaciones"
+		            android:gravity="center_horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/altitud"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		        <TextView 
+		            android:id="@+id/textCuencasUbicaciones"
+		            android:gravity="center_horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/cuenca_hidra"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		        <TextView 
+		            android:id="@+id/textEstacionesUbicaciones"
+		            android:gravity="center_horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/esta_mete"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		        <TextView 
+		            android:id="@+id/textTipoUbicaciones"
+		            android:gravity="center_horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/tipo_presas"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		        <TextView 
+		            android:id="@+id/textUsoUbicaciones"
+		            android:gravity="center_horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/uso_presas"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		        <TextView 
+		            android:id="@+id/textDistanciaUbicaciones"
+		            android:gravity="center_horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/dist_pobla"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		    </LinearLayout>
+	
+			<ListView
+			    android:id="@+id/listUbicaciones_dams"
+			    android:layout_width="match_parent"
+			    android:layout_height="340dp"
+			    android:layout_marginLeft="10dp"
+			    android:layout_marginRight="10dp"
+			    android:layout_marginTop="10dp"
+			    android:layout_weight="0.66"
+			    android:background="@android:color/background_light"
+			    android:cacheColorHint="@android:color/transparent"
+			    android:divider="@android:color/background_dark"
+			    android:dividerHeight="2dp"
+			    android:paddingBottom="5dp"
+			    android:paddingLeft="8dp"
+			    android:paddingRight="8dp"
+			    android:paddingTop="5dp"
+			    android:scrollbarStyle="outsideOverlay" >
+			</ListView>
+		</LinearLayout>
+   </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/BotonesFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="870dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp" >
+
+        <ImageButton
+            android:id="@+id/buttonSaveBotUbicaciones_dams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:background="@mipmap/guardar" />
+
+        <ImageButton
+            android:id="@+id/buttonOutBotUbicaciones_dams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:background="@mipmap/salir" />
+    </LinearLayout>
+
+</LinearLayout>

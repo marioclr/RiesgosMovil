@@ -1,0 +1,2 @@
+INSERT INTO TBL_PostalCodes(_id, StateID, PostalCode, Township, TownshipKind, CityHall, City) Values ('7399AE65-AD0D-4E84-B711-00005D434EEA','494C0A72-F88B-4E66-AEC5-94A63D228153','79320','Ciudad del Maíz Centro','Colonia','Ciudad del Maíz','Ciudad del Maíz')
+INSERT INTO TBL_PostalCodes(_id, StateID, PostalCode, Township, TownshipKind, CityHall, City) Values ('098B5C9A-C7CF-4AB1-AC88-00008E7DEC11','C2CA920B-6C45-41D2-9FB9-1B9A44B46411','31996','San José de Nava','Ranchería','Matachí','')
